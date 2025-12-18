@@ -48,10 +48,12 @@ st.markdown(
 )
 
 
+#Load Labels
+
 @st.cache_resource
 def load_labels(path: Path) -> List[str]:
     if not path.exists():
-        raise FileNotFoundError(f"Missing label map at {path}")
+        
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     labels = data.get("labels")
