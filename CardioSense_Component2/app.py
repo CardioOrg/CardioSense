@@ -1,8 +1,10 @@
 
 
+
 import json
 from pathlib import Path
 from typing import List, Tuple
+
 
 import pandas as pd
 import streamlit as st
@@ -13,10 +15,12 @@ from torchvision import transforms
 from torchvision.models import DenseNet121_Weights, densenet121
 
 
+
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "cardiosense_cxr_densenet121.pth"
 LABEL_MAP_PATH = BASE_DIR / "label_map.json"
 IMG_SIZE = 224
+
 
 
 st.set_page_config(
@@ -50,6 +54,7 @@ st.markdown(
 
 #Load Labels
 
+
 @st.cache_resource
 def load_labels(path: Path) -> List[str]:
     if not path.exists():
@@ -60,6 +65,7 @@ def load_labels(path: Path) -> List[str]:
     if not labels:
         raise ValueError("label_map.json does not contain a 'labels' list")
     return labels
+
 
 
 @st.cache_resource
@@ -84,6 +90,7 @@ def load_model_and_device() -> Tuple[torch.nn.Module, List[str], torch.device]:
     return model, labels, device
 
 
+
 @st.cache_resource
 def get_transform():
     return transforms.Compose(
@@ -96,6 +103,7 @@ def get_transform():
             ),
         ]
     )
+
 
 
 def predict(image: Image.Image, threshold: float) -> Tuple[pd.DataFrame, List[Tuple[str, float]]]:
@@ -115,6 +123,7 @@ def predict(image: Image.Image, threshold: float) -> Tuple[pd.DataFrame, List[Tu
 
     df = pd.DataFrame(rows)
     return df, positives
+
 
 
 def main():
@@ -179,3 +188,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
