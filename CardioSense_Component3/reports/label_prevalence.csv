@@ -1,0 +1,16 @@
+label,prevalence
+activity_aerobic,0.6940787075514341
+sleep_hygiene,0.5774754676814954
+stress_reduction,0.5774754676814954
+bp_home_monitoring,0.34278173891489144
+diet_low_sodium,0.34278173891489144
+activity_strength,0.261376726010819
+weight_loss_plan,0.261376726010819
+lipid_followup,0.25010571132788006
+diet_mediterranean,0.25010571132788006
+clinician_followup_routine,0.21643847600717378
+diet_reduce_added_sugar,0.14983304900631353
+glucose_followup,0.14983304900631353
+smoking_cessation,0.08798098654185439
+alcohol_reduction,0.053365994488430074
+clinician_followup_urgent,0.014055961389848796

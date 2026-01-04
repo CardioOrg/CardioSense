@@ -1,0 +1,244 @@
+{
+  "diet_low_sodium": {
+    "title": "Reduce sodium to improve blood pressure control",
+    "priority": "high",
+    "why_it_matters": [
+      "Blood pressure is elevated (ap_hi={ap_hi:.0f}, ap_lo={ap_lo:.0f}).",
+      "Lower sodium intake can support better BP control over time."
+    ],
+    "what_to_do": [
+      "Reduce processed foods and salty snacks.",
+      "Avoid adding salt at the table. Taste first.",
+      "Use herbs, lemon, garlic, and spices for flavor."
+    ],
+    "targets": [
+      "Make 1 low-sodium meal choice per day for 14 days.",
+      "Track BP changes to find what improves your readings."
+    ],
+    "follow_up": "If home BP stays high for 1–2 weeks, discuss the trend with a clinician."
+  },
+  "bp_home_monitoring": {
+    "title": "Start structured home blood pressure monitoring",
+    "priority": "high",
+    "why_it_matters": [
+      "Single readings vary. Trends give better insight.",
+      "Home monitoring helps confirm whether changes are working."
+    ],
+    "what_to_do": [
+      "Measure BP twice daily for 7 days (morning and evening).",
+      "Rest 5 minutes before measuring. Use the same arm and cuff placement.",
+      "Log date/time, sleep quality, stress, caffeine, and symptoms."
+    ],
+    "targets": [
+      "Create a 7-day baseline, then re-check weekly."
+    ],
+    "follow_up": "Share your BP log during follow-up visits."
+  },
+  "diet_mediterranean": {
+    "title": "Shift toward a heart-healthy eating pattern",
+    "priority": "medium",
+    "why_it_matters": [
+      "Cholesterol category is elevated (cholesterol={cholesterol}).",
+      "Higher fiber and healthier fats support lipid control."
+    ],
+    "what_to_do": [
+      "Increase vegetables, legumes, whole grains, and nuts.",
+      "Prefer fish and lean proteins over processed meats.",
+      "Swap fried foods for grilled, baked, or steamed options."
+    ],
+    "targets": [
+      "Add 1 high-fiber meal per day for 14 days.",
+      "Replace 2 processed snacks per week with nuts or fruit."
+    ],
+    "follow_up": "Consider repeating a lipid test after sustained changes."
+  },
+  "lipid_followup": {
+    "title": "Arrange lipid follow-up and review results",
+    "priority": "medium",
+    "why_it_matters": [
+      "Lipid trends help confirm whether diet and activity changes are working."
+    ],
+    "what_to_do": [
+      "Schedule a lipid panel when appropriate for your care plan.",
+      "Bring recent results to your clinician review."
+    ],
+    "targets": [
+      "Keep a record of results and dates to track progress."
+    ],
+    "follow_up": "Discuss targets and next steps based on your history and risk."
+  },
+  "diet_reduce_added_sugar": {
+    "title": "Reduce added sugar and improve carbohydrate quality",
+    "priority": "medium",
+    "why_it_matters": [
+      "Glucose category is elevated (gluc={gluc}).",
+      "Reducing spikes supports metabolic control and weight management."
+    ],
+    "what_to_do": [
+      "Avoid sugary drinks and limit desserts to planned occasions.",
+      "Choose whole grains and pair carbs with protein/fiber.",
+      "Avoid large late-night meals and sweet snacks before sleep."
+    ],
+    "targets": [
+      "Replace sugary drinks with water or unsweetened options.",
+      "Limit sweets to 1–2 planned servings per week."
+    ],
+    "follow_up": "Ask about fasting glucose or HbA1c testing if needed."
+  },
+  "glucose_followup": {
+    "title": "Arrange glucose follow-up and review results",
+    "priority": "medium",
+    "why_it_matters": [
+      "Glucose trends help confirm whether nutrition and activity changes are effective."
+    ],
+    "what_to_do": [
+      "Discuss fasting glucose and/or HbA1c testing with your clinician.",
+      "Track results over time rather than focusing on a single value."
+    ],
+    "targets": [
+      "Record test dates and results to monitor trend."
+    ],
+    "follow_up": "Discuss targets and next steps based on your risk profile."
+  },
+  "activity_aerobic": {
+    "title": "Increase weekly aerobic activity safely",
+    "priority": "medium",
+    "why_it_matters": [
+      "Low activity or excess weight can increase cardiovascular risk (active={active}, BMI={bmi:.1f}).",
+      "Aerobic activity supports BP, glucose, and lipid control."
+    ],
+    "what_to_do": [
+      "Start brisk walking 20–30 minutes, 3 days per week.",
+      "Add 1 day per week until most days.",
+      "Increase gradually with warm-up and cool-down."
+    ],
+    "targets": [
+      "Progress steadily over 4 weeks."
+    ],
+    "follow_up": "Stop if chest discomfort, unusual breathlessness, or dizziness occurs and seek medical advice."
+  },
+  "activity_strength": {
+    "title": "Add strength training to support metabolic health",
+    "priority": "low",
+    "why_it_matters": [
+      "Strength training supports glucose control and long-term weight maintenance."
+    ],
+    "what_to_do": [
+      "Do 2 sessions per week (bodyweight squats, wall push-ups, resistance bands).",
+      "Keep sessions short (15–20 minutes) and focus on consistency."
+    ],
+    "targets": [
+      "2 sessions per week for 4 weeks."
+    ],
+    "follow_up": "Increase intensity only after consistency improves."
+  },
+  "weight_loss_plan": {
+    "title": "Start a structured weight-loss plan",
+    "priority": "medium",
+    "why_it_matters": [
+      "BMI is elevated (BMI={bmi:.1f}).",
+      "Modest weight reduction can improve BP and metabolic markers."
+    ],
+    "what_to_do": [
+      "Track weight weekly and track 1 daily habit (example: sugary drinks).",
+      "Plan meals to reduce unplanned snacking.",
+      "Prioritize protein and vegetables for better satiety."
+    ],
+    "targets": [
+      "Aim for gradual progress over 4 weeks."
+    ],
+    "follow_up": "If no change after 4 weeks, adjust 1 habit at a time."
+  },
+  "sleep_hygiene": {
+    "title": "Improve sleep habits",
+    "priority": "low",
+    "why_it_matters": [
+      "Poor sleep can worsen BP control and appetite regulation."
+    ],
+    "what_to_do": [
+      "Keep a fixed sleep/wake time on most days.",
+      "Stop screens 30–60 minutes before bed.",
+      "Avoid caffeine late in the day and heavy meals close to bedtime.",
+      "Keep the room dark, cool, and quiet."
+    ],
+    "targets": [
+      "Track sleep duration and wake time for 7 days."
+    ],
+    "follow_up": "If loud snoring or daytime sleepiness is frequent, discuss sleep screening."
+  },
+  "stress_reduction": {
+    "title": "Use a short daily stress routine",
+    "priority": "low",
+    "why_it_matters": [
+      "Stress can raise heart rate and BP and make habits harder to maintain."
+    ],
+    "what_to_do": [
+      "Slow breathing twice daily for 5 minutes (inhale 4 seconds, exhale 6 seconds).",
+      "Add 1 planned break daily (short walk, stretching, quiet time).",
+      "Reduce triggers such as late caffeine, skipped meals, and sleep debt."
+    ],
+    "targets": [
+      "2 short routines per day for 14 days."
+    ],
+    "follow_up": "If symptoms persist, consider structured support with a clinician."
+  },
+  "smoking_cessation": {
+    "title": "Create a quit plan with a clear start date",
+    "priority": "high",
+    "why_it_matters": [
+      "Smoking is a major modifiable cardiovascular risk factor."
+    ],
+    "what_to_do": [
+      "Set a quit date within 14 days.",
+      "List your top triggers and prepare replacements (gum, walk, water).",
+      "Consider nicotine replacement or clinician support if needed."
+    ],
+    "targets": [
+      "Reduce daily smoking until quit date, then stop completely."
+    ],
+    "follow_up": "Support options can improve quit success rates."
+  },
+  "alcohol_reduction": {
+    "title": "Reduce alcohol intake to support BP and sleep",
+    "priority": "low",
+    "why_it_matters": [
+      "Alcohol can raise BP and reduce sleep quality."
+    ],
+    "what_to_do": [
+      "Set a weekly limit and track drinks per day.",
+      "Plan alcohol-free days and increase them gradually.",
+      "Avoid alcohol close to bedtime."
+    ],
+    "targets": [
+      "Reduce drinking days first, then reduce drinks per day."
+    ],
+    "follow_up": "If reducing is difficult, start with alcohol-free days."
+  },
+  "clinician_followup_urgent": {
+    "title": "Seek urgent clinical review for very high blood pressure",
+    "priority": "high",
+    "why_it_matters": [
+      "BP is extremely high (ap_hi={ap_hi:.0f}, ap_lo={ap_lo:.0f}).",
+      "Very high BP needs prompt evaluation."
+    ],
+    "what_to_do": [
+      "Re-check BP after 5–10 minutes of rest to confirm.",
+      "If still very high or you feel unwell, seek urgent care."
+    ],
+    "targets": [],
+    "follow_up": "Do not delay if chest pain, severe headache, weakness, or shortness of breath occurs."
+  },
+  "clinician_followup_routine": {
+    "title": "Book a routine clinician review",
+    "priority": "medium",
+    "why_it_matters": [
+      "Follow-up helps turn risk signals into a clear plan."
+    ],
+    "what_to_do": [
+      "Bring BP logs and recent lab results if available.",
+      "Discuss targets for BP, cholesterol, glucose, and lifestyle."
+    ],
+    "targets": [],
+    "follow_up": "Regular review supports steady risk reduction."
+  }
+}
