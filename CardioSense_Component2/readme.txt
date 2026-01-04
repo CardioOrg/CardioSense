@@ -25,5 +25,5 @@ Then open the provided local URL in your browser, upload a PNG/JPG chest X-ray, 
 Notes
 -----
 - Uses GPU if available; otherwise runs on CPU.
-- Preprocessing matches training: resize to 224x224, normalize with ImageNet stats.
+- Preprocessing matches training: resize to 224x224, normalize with ImageNet stats..
 
