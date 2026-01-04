@@ -1,0 +1,1001 @@
+age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target,symptom_text
+67,0,0,130,150,0,0,159,1,0.7,2,0,3,0,exercise induced chest pain
+57,1,1,95,221,1,2,75,1,5.1,0,3,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+43,0,1,114,236,0,2,177,1,0.9,2,3,1,0,chest pain and exercise induced chest pain and multiple blocked vessels
+71,1,3,102,315,0,2,117,0,4.6,1,2,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+36,0,2,187,155,1,0,111,0,0.3,0,3,2,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+49,0,1,97,363,1,1,145,1,5.9,2,1,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+67,1,1,110,302,1,1,146,0,4.4,1,2,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+47,1,1,187,359,0,0,199,0,0.0,2,0,3,0,chest pain and high blood pressure and high cholesterol
+51,1,3,157,294,1,1,128,1,4.7,1,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+39,1,2,114,210,1,2,96,0,3.2,1,0,1,1,chest pain and fasting blood sugar high and ST depression and irregular heart rate
+39,0,0,168,161,0,1,148,0,4.8,2,0,3,0,high blood pressure and ST depression
+52,1,3,157,155,1,1,141,0,3.2,2,3,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+64,0,3,134,367,1,1,76,1,4.0,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+68,0,2,149,176,1,2,180,1,4.9,1,2,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+52,1,2,101,285,1,0,188,0,2.5,1,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+31,0,3,121,360,0,2,132,1,0.0,0,0,1,1,chest pain and high cholesterol and exercise induced chest pain
+50,0,0,185,273,1,0,193,1,5.3,1,0,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+30,0,3,181,255,1,0,81,1,2.4,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+52,0,2,102,342,0,0,112,0,3.1,1,0,1,1,chest pain and high cholesterol and ST depression and irregular heart rate
+72,1,0,120,334,1,1,86,0,0.0,0,2,1,1,high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+58,1,2,167,242,0,1,132,1,3.1,1,2,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+66,1,0,109,258,0,0,189,0,6.1,1,3,1,1,high cholesterol and ST depression and multiple blocked vessels
+30,1,1,107,390,0,0,105,0,1.7,1,3,3,1,chest pain and high cholesterol and multiple blocked vessels and irregular heart rate
+49,0,2,182,248,1,1,77,0,2.5,2,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+61,0,2,149,317,0,2,138,0,4.3,2,2,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+40,1,3,152,291,0,0,159,0,5.1,1,0,2,1,chest pain and high blood pressure and high cholesterol and ST depression
+50,1,2,95,184,0,2,105,1,2.6,0,3,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+72,1,2,121,325,1,1,97,0,1.9,0,1,3,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+53,0,1,182,386,1,0,187,0,5.8,1,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+55,1,2,132,233,1,2,162,0,4.2,2,2,3,1,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels
+70,1,1,91,205,1,2,145,1,0.7,0,3,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+56,1,1,149,326,1,2,170,1,0.4,2,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+44,0,1,112,290,1,1,83,1,3.0,0,3,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+43,0,1,172,338,1,1,140,0,1.4,1,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+75,0,0,120,379,0,2,193,1,1.6,2,2,3,1,high cholesterol and exercise induced chest pain and multiple blocked vessels
+72,0,3,94,198,0,2,194,1,5.4,0,1,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+31,0,0,172,195,0,1,106,1,0.6,1,2,1,1,high blood pressure and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+65,0,2,123,262,0,2,98,1,4.4,1,1,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+35,0,0,99,339,1,2,88,0,1.7,1,0,2,0,high cholesterol and fasting blood sugar high and irregular heart rate
+49,0,0,178,285,0,1,175,1,4.7,2,2,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+37,1,2,91,192,0,2,90,1,4.5,2,3,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+67,1,2,100,297,0,2,133,0,0.0,1,0,1,1,chest pain and high cholesterol
+46,0,2,139,273,0,2,96,0,3.2,2,3,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+32,0,0,120,246,1,1,124,1,0.9,0,3,3,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+53,1,0,145,239,1,2,98,0,5.4,1,3,2,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+42,0,2,168,188,1,1,94,1,5.4,1,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+37,0,3,162,234,0,1,139,0,2.6,2,0,1,1,chest pain and high blood pressure and ST depression
+54,0,3,176,394,1,0,132,0,2.8,1,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+30,1,1,172,326,0,0,199,1,1.9,0,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+48,1,2,98,341,1,2,85,0,4.4,2,1,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+56,1,1,188,211,1,1,169,1,2.2,2,2,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+75,1,3,110,255,1,0,99,0,1.7,1,0,1,1,chest pain and high cholesterol and fasting blood sugar high and irregular heart rate
+35,1,1,162,256,1,2,114,1,2.7,1,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+72,0,2,117,203,1,0,88,0,0.6,1,0,3,1,chest pain and fasting blood sugar high and irregular heart rate
+36,1,2,151,275,0,0,103,0,4.6,2,1,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+75,0,2,199,382,1,1,131,0,0.1,1,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+63,0,0,96,158,0,1,187,0,4.0,0,1,2,1,ST depression and multiple blocked vessels
+42,1,1,169,237,0,0,169,0,1.1,1,2,1,0,chest pain and high blood pressure and multiple blocked vessels
+45,1,3,105,186,0,0,91,1,1.4,1,0,3,1,chest pain and exercise induced chest pain and irregular heart rate
+64,0,3,186,198,0,1,180,0,3.9,2,1,2,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+68,0,3,93,190,0,2,142,1,6.2,1,3,3,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+32,0,0,93,166,1,1,107,1,4.8,2,3,1,1,fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+30,1,0,192,237,1,0,139,1,1.4,1,0,3,1,high blood pressure and fasting blood sugar high and exercise induced chest pain
+34,1,2,129,170,1,2,185,0,1.1,0,1,1,0,chest pain and fasting blood sugar high and multiple blocked vessels
+70,1,3,106,200,1,0,148,1,5.4,0,3,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+32,1,0,190,208,0,2,78,0,2.8,2,2,2,1,high blood pressure and ST depression and multiple blocked vessels and irregular heart rate
+57,1,2,192,316,1,0,101,1,0.8,2,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+46,0,3,141,332,1,2,119,1,5.3,1,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+54,1,1,182,190,0,2,151,1,5.1,1,3,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+72,0,2,141,188,0,0,74,1,6.1,0,2,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+62,0,0,125,290,1,2,156,1,5.6,1,2,3,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+38,0,0,127,341,1,1,195,0,5.3,0,2,1,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+64,1,2,192,160,0,0,144,1,0.3,2,1,1,1,chest pain and high blood pressure and exercise induced chest pain and multiple blocked vessels
+42,1,2,139,387,1,1,91,1,0.6,1,0,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+59,1,0,152,296,1,0,137,0,3.5,2,1,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+76,0,1,190,288,1,2,113,0,3.3,1,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+43,0,3,152,226,1,2,103,0,2.8,0,3,3,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+36,0,1,151,276,0,2,146,1,2.5,2,0,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+42,0,2,188,195,0,0,111,1,2.7,2,2,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+51,0,1,96,194,0,1,175,1,3.5,1,3,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+68,0,0,116,150,1,1,164,1,0.0,2,1,2,1,fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+49,1,2,181,317,1,0,137,1,1.6,0,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+44,1,3,175,257,1,0,197,1,3.2,2,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+73,1,0,103,168,1,1,154,0,4.5,2,2,2,1,fasting blood sugar high and ST depression and multiple blocked vessels
+46,1,0,160,225,1,1,152,0,1.1,1,1,2,0,high blood pressure and fasting blood sugar high and multiple blocked vessels
+75,0,3,190,221,0,1,164,1,3.4,2,2,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+52,0,3,175,349,1,1,101,1,4.4,1,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+54,1,1,94,338,1,0,135,1,2.8,1,0,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+53,0,2,144,394,0,0,185,1,0.2,2,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+73,1,3,91,258,1,2,199,1,2.8,0,0,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+69,1,3,151,161,0,1,129,0,1.8,1,3,2,1,chest pain and high blood pressure and multiple blocked vessels
+57,1,2,180,338,0,2,86,0,5.8,2,3,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+43,0,3,110,389,0,0,165,1,0.8,1,3,3,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+73,1,3,191,310,0,0,85,0,4.0,0,2,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+29,1,1,168,194,0,2,115,1,0.3,0,0,2,1,chest pain and high blood pressure and exercise induced chest pain and irregular heart rate
+53,1,0,110,239,1,1,176,1,2.8,1,2,3,1,fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+35,0,0,99,252,0,1,157,1,3.4,0,1,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+37,0,0,176,369,0,1,198,0,1.8,2,0,3,0,high blood pressure and high cholesterol
+52,1,0,147,399,1,1,188,0,2.8,2,3,2,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+29,0,3,128,346,1,2,154,1,1.0,1,2,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+72,0,2,94,157,0,2,73,0,1.9,0,2,1,1,chest pain and multiple blocked vessels and irregular heart rate
+36,0,2,154,302,1,0,140,0,3.9,2,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression
+52,0,1,102,240,1,1,180,1,1.9,2,0,3,0,chest pain and fasting blood sugar high and exercise induced chest pain
+39,0,1,174,323,0,1,119,0,5.6,2,3,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+45,0,3,179,236,0,1,164,0,3.9,1,3,2,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+36,0,2,198,307,1,2,161,1,2.7,1,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+63,0,2,174,386,0,1,134,1,0.2,2,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+63,0,0,142,324,0,2,116,0,3.1,2,2,1,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+61,0,3,171,364,1,1,175,1,4.7,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+33,1,3,190,326,0,1,199,0,1.6,0,1,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+70,1,0,134,324,0,0,175,1,5.0,0,1,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+67,0,3,121,233,0,1,93,1,1.6,1,0,1,1,chest pain and exercise induced chest pain and irregular heart rate
+69,1,3,125,231,0,1,73,1,5.1,2,3,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+56,1,1,170,295,0,0,177,1,0.5,1,1,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+35,0,2,188,343,1,2,88,0,5.4,2,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+37,0,3,149,217,1,2,109,1,3.1,0,0,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+36,0,1,100,371,0,1,119,1,1.8,0,1,2,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+40,1,2,152,310,1,2,144,1,1.6,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+62,1,0,110,276,0,1,81,0,2.7,0,2,1,1,high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+61,0,1,141,313,0,0,96,0,6.2,2,1,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+76,0,1,144,231,0,0,182,1,1.4,0,2,2,1,chest pain and high blood pressure and exercise induced chest pain and multiple blocked vessels
+51,0,2,115,378,0,1,118,1,0.6,2,1,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+52,1,0,157,296,0,0,199,1,3.6,2,1,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+65,1,1,123,388,1,0,129,1,3.0,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+63,1,3,141,305,1,1,99,1,3.3,0,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+72,1,3,171,317,0,1,153,1,4.1,0,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+68,0,3,193,233,1,0,97,0,1.7,1,2,3,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+50,0,0,188,262,0,2,94,1,5.6,2,2,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+55,0,1,194,374,1,2,165,1,2.7,0,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+63,0,3,182,225,0,1,194,1,0.8,2,1,1,1,chest pain and high blood pressure and exercise induced chest pain and multiple blocked vessels
+29,1,0,141,271,1,1,79,1,4.6,1,1,1,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+63,1,3,118,392,0,2,111,1,4.0,2,2,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,0,2,127,292,0,0,109,1,2.0,0,0,1,1,chest pain and high cholesterol and exercise induced chest pain and irregular heart rate
+75,0,1,131,190,1,2,146,0,3.9,2,0,1,0,chest pain and fasting blood sugar high and ST depression
+42,1,1,110,316,1,2,174,0,1.4,2,0,3,0,chest pain and high cholesterol and fasting blood sugar high
+31,0,0,131,151,0,2,187,0,2.8,0,2,2,0,ST depression and multiple blocked vessels
+29,1,0,102,340,1,2,111,0,5.6,0,2,3,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+33,0,1,194,178,0,1,116,0,0.8,2,0,3,0,chest pain and high blood pressure and irregular heart rate
+54,0,3,153,254,1,1,91,0,2.4,2,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+42,0,3,106,351,1,0,176,1,5.1,1,1,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+67,0,2,98,343,0,0,96,1,6.0,0,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+55,0,3,130,200,1,0,110,1,2.8,2,2,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+37,0,0,90,224,1,0,149,1,3.1,0,0,2,0,fasting blood sugar high and exercise induced chest pain and ST depression
+43,0,0,91,354,0,2,158,1,3.5,1,0,1,1,high cholesterol and exercise induced chest pain and ST depression
+43,1,3,149,159,1,1,135,1,5.8,2,3,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+54,1,0,137,291,0,1,81,0,5.3,2,2,1,1,high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+70,1,1,118,359,0,0,142,1,1.1,2,3,3,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+41,1,1,186,200,0,0,145,0,2.7,0,1,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+60,1,3,99,267,0,2,159,0,2.9,1,3,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+67,0,1,147,350,0,2,79,1,4.9,0,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and irregular heart rate
+60,0,1,149,270,1,0,165,1,3.7,2,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+32,1,2,193,188,0,1,89,1,4.1,1,2,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+58,0,2,110,177,0,1,108,1,6.2,2,3,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,1,1,117,152,1,1,129,1,0.5,2,3,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+51,1,3,164,233,1,0,135,1,1.4,0,1,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+67,0,2,123,347,1,1,134,1,2.5,2,1,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+73,0,0,97,304,0,2,193,0,2.2,1,0,2,1,high cholesterol and ST depression
+43,0,0,148,266,0,2,199,1,0.1,2,0,3,1,high blood pressure and high cholesterol and exercise induced chest pain
+71,1,0,175,151,0,0,126,1,0.6,2,0,2,1,high blood pressure and exercise induced chest pain
+57,0,3,161,242,1,2,147,0,4.2,0,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+64,1,1,138,315,0,0,98,1,5.5,1,3,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+41,1,0,168,280,1,1,84,1,3.2,0,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+60,1,3,106,293,0,1,81,0,3.3,2,0,1,1,chest pain and high cholesterol and ST depression and irregular heart rate
+35,0,2,149,243,1,1,170,1,1.6,0,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+50,0,1,176,189,0,2,153,1,4.8,0,2,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+56,1,2,177,151,0,0,194,1,4.7,0,0,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression
+30,0,3,134,230,0,1,172,1,3.6,0,1,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+70,0,0,172,318,1,0,93,1,1.3,2,1,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+73,0,0,158,161,1,1,179,1,0.6,2,3,3,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+34,1,3,121,312,0,2,147,0,0.4,1,2,3,1,chest pain and high cholesterol and multiple blocked vessels
+56,1,0,133,384,0,2,170,1,3.7,0,1,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+56,0,1,154,214,0,0,197,1,5.1,0,2,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+72,1,3,176,204,1,2,127,0,5.3,1,2,3,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+72,0,2,190,194,0,2,145,0,2.9,0,1,3,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+48,0,3,97,356,0,0,105,1,4.9,1,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+58,0,1,166,367,0,1,91,0,5.9,2,1,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+39,0,1,161,250,0,2,196,1,1.7,1,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+56,1,3,176,362,1,0,149,1,2.5,0,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+53,1,3,132,211,1,2,169,0,5.8,1,0,3,0,chest pain and fasting blood sugar high and ST depression
+67,1,0,90,198,0,2,165,1,2.1,2,3,3,1,exercise induced chest pain and ST depression and multiple blocked vessels
+61,0,1,198,276,0,2,87,1,5.7,0,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+29,0,3,140,372,1,2,107,0,6.1,2,1,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+55,0,3,113,302,1,0,178,0,4.1,2,1,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+41,1,1,188,172,0,0,192,0,5.1,1,1,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+69,0,3,113,301,1,0,173,0,4.6,2,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+31,1,0,106,398,1,2,150,1,4.3,0,0,1,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+67,1,1,94,187,0,2,156,0,1.9,2,2,3,0,chest pain and multiple blocked vessels
+34,1,0,109,177,1,2,130,0,0.4,2,2,3,0,fasting blood sugar high and multiple blocked vessels
+36,1,0,110,170,1,0,115,0,2.1,1,0,3,0,fasting blood sugar high and ST depression and irregular heart rate
+55,1,0,193,331,0,2,101,0,4.1,2,3,3,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+37,1,0,147,256,0,1,84,0,0.6,1,2,3,1,high blood pressure and high cholesterol and multiple blocked vessels and irregular heart rate
+65,0,1,120,295,1,2,113,1,0.1,1,0,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+61,0,0,199,313,0,1,123,0,0.9,0,3,1,1,high blood pressure and high cholesterol and multiple blocked vessels
+70,1,0,189,248,1,2,113,1,4.4,0,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+72,1,3,100,322,0,0,167,0,6.0,0,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+52,0,1,141,268,1,2,74,0,6.1,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+43,1,1,104,222,0,1,178,0,3.1,1,3,2,0,chest pain and ST depression and multiple blocked vessels
+60,1,2,172,330,1,1,96,0,5.4,2,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+60,0,1,96,379,1,2,185,0,4.6,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+52,1,1,117,271,1,1,156,0,3.1,0,0,1,0,chest pain and high cholesterol and fasting blood sugar high and ST depression
+69,1,2,140,179,0,1,173,0,3.6,0,0,1,1,chest pain and ST depression
+40,1,1,196,337,0,0,192,0,0.9,2,2,1,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+67,0,1,147,257,1,2,148,1,5.8,0,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+30,0,1,94,247,1,2,112,0,2.2,2,2,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+31,0,1,94,181,0,2,166,1,2.8,1,2,3,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+65,1,2,183,344,0,1,100,0,4.2,1,0,2,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+45,1,1,185,344,0,2,168,1,2.1,1,2,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+30,0,1,97,305,0,2,86,0,1.6,2,1,3,1,chest pain and high cholesterol and multiple blocked vessels and irregular heart rate
+30,1,2,153,321,0,0,152,0,3.9,0,2,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+56,1,3,99,228,0,0,179,0,0.2,0,3,2,1,chest pain and multiple blocked vessels
+51,1,0,127,190,1,0,101,1,4.5,0,1,2,1,fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,1,3,200,212,0,1,104,1,3.2,0,0,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and irregular heart rate
+60,1,2,185,172,1,2,98,1,3.8,0,3,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+61,0,0,181,253,0,0,139,1,3.9,2,1,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+29,1,2,170,224,0,0,164,0,3.3,1,3,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+47,0,2,184,197,1,0,91,0,3.6,0,1,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+30,1,1,97,309,1,2,138,0,4.2,1,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+72,0,0,193,399,0,2,158,1,4.7,2,3,2,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+54,1,1,114,400,1,2,141,0,4.5,2,1,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+60,0,0,162,206,1,1,198,1,5.4,0,0,2,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression
+34,1,2,155,267,1,1,156,1,1.2,2,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+60,0,2,168,249,1,0,165,1,2.5,1,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+32,1,3,139,273,0,2,144,1,5.9,0,3,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+39,0,0,156,310,1,0,123,1,2.5,0,0,1,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+45,1,1,138,301,0,2,157,0,0.8,1,0,3,0,chest pain and high cholesterol
+66,0,3,125,316,0,2,123,1,3.3,0,2,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+52,0,3,157,183,0,2,85,1,0.7,0,0,2,1,chest pain and high blood pressure and exercise induced chest pain and irregular heart rate
+33,1,3,167,333,0,1,168,0,1.3,1,3,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+62,1,1,194,305,1,1,89,1,6.2,0,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+34,0,3,130,314,1,2,115,1,3.4,0,0,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+50,1,1,178,156,0,0,196,0,1.8,1,2,1,0,chest pain and high blood pressure and multiple blocked vessels
+39,0,3,151,345,0,2,127,0,6.2,2,2,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+76,0,1,99,314,0,2,180,0,6.0,1,2,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+44,0,2,110,205,0,0,198,1,2.7,0,1,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+61,1,2,125,214,1,2,150,0,1.6,1,0,3,0,chest pain and fasting blood sugar high
+37,0,2,101,342,0,0,153,0,5.2,0,0,1,1,chest pain and high cholesterol and ST depression
+34,0,2,180,196,1,1,139,0,4.4,0,0,2,1,chest pain and high blood pressure and fasting blood sugar high and ST depression
+44,1,2,193,297,0,1,77,1,4.3,1,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+57,1,3,91,168,0,0,98,0,5.5,0,1,2,1,chest pain and ST depression and multiple blocked vessels and irregular heart rate
+31,1,3,102,306,0,1,181,1,4.3,2,3,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+48,1,3,142,351,0,1,200,1,1.8,0,2,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+64,0,1,121,337,1,0,177,0,4.3,1,2,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+47,0,1,184,295,1,1,178,1,1.9,2,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+54,0,1,105,369,1,2,89,1,4.7,2,1,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+31,0,1,121,312,0,2,142,0,3.8,0,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+47,1,2,121,320,0,0,73,1,0.5,1,0,3,1,chest pain and high cholesterol and exercise induced chest pain and irregular heart rate
+48,0,2,187,388,1,1,88,0,3.2,0,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+60,0,2,100,372,1,2,171,1,2.1,0,3,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+35,1,0,99,368,0,2,155,1,2.0,1,2,1,1,high cholesterol and exercise induced chest pain and multiple blocked vessels
+69,0,3,104,275,0,1,121,0,3.7,1,2,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+61,0,1,106,288,1,1,180,0,2.0,0,2,2,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels
+68,0,1,129,198,0,2,178,1,4.8,2,3,3,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+67,0,2,107,262,0,2,155,1,0.4,0,0,2,1,chest pain and high cholesterol and exercise induced chest pain
+46,0,1,144,187,1,0,112,0,4.1,2,0,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and irregular heart rate
+68,0,1,162,213,0,0,111,1,5.0,0,2,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+29,1,3,114,218,1,2,159,1,4.2,1,2,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+39,1,2,193,285,0,0,184,1,3.1,2,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+56,0,3,148,311,1,2,95,1,5.9,1,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+53,0,0,167,325,0,2,112,0,1.9,1,1,2,1,high blood pressure and high cholesterol and multiple blocked vessels and irregular heart rate
+51,1,0,178,265,1,0,146,0,0.1,1,2,1,1,high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+59,0,0,111,333,1,0,89,0,2.7,1,3,2,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+58,0,2,119,353,1,1,108,0,0.2,1,2,3,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+70,0,1,173,379,1,1,81,0,5.9,0,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+63,1,2,174,214,0,1,80,0,1.3,2,2,2,1,chest pain and high blood pressure and multiple blocked vessels and irregular heart rate
+35,0,2,133,180,0,2,111,1,4.9,0,1,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+44,1,1,121,281,1,0,80,0,4.8,0,1,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+54,0,3,140,262,0,2,107,1,1.3,0,1,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+76,1,0,135,258,0,0,167,1,3.9,1,0,1,1,high cholesterol and exercise induced chest pain and ST depression
+30,1,3,110,327,0,2,88,1,0.3,0,0,2,1,chest pain and high cholesterol and exercise induced chest pain and irregular heart rate
+29,0,0,188,218,0,1,185,0,3.0,2,2,2,1,high blood pressure and ST depression and multiple blocked vessels
+76,1,2,121,307,0,1,182,1,0.1,0,1,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+40,0,0,183,269,1,1,134,0,5.7,1,0,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression
+33,1,2,128,237,1,2,168,1,6.1,2,2,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+65,0,3,101,336,1,0,141,1,1.4,2,2,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+60,0,2,194,216,1,0,121,0,1.3,2,2,3,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels
+37,1,3,136,224,0,1,187,1,4.7,2,2,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+69,0,1,107,194,0,1,189,1,1.6,0,2,1,1,chest pain and exercise induced chest pain and multiple blocked vessels
+63,0,1,110,153,1,1,76,1,5.5,1,3,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+47,1,1,102,303,0,1,80,1,3.6,2,1,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+76,0,2,110,304,0,0,172,0,2.2,2,2,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+44,0,1,97,323,1,2,130,1,5.2,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+31,1,0,135,395,0,2,137,1,3.1,0,1,1,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+48,1,3,193,256,1,2,171,0,5.7,2,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression
+52,0,3,199,341,1,2,179,1,5.8,0,2,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+61,0,0,96,368,0,1,120,1,1.0,0,3,2,1,high cholesterol and exercise induced chest pain and multiple blocked vessels
+52,1,2,112,383,0,1,186,1,0.0,0,0,2,1,chest pain and high cholesterol and exercise induced chest pain
+39,1,2,197,200,1,1,115,1,6.1,0,3,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+36,0,3,185,199,1,2,122,0,5.6,2,1,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+64,1,1,164,155,0,1,157,1,0.3,2,1,3,1,chest pain and high blood pressure and exercise induced chest pain and multiple blocked vessels
+66,0,2,175,208,1,1,190,0,5.2,0,0,3,1,chest pain and high blood pressure and fasting blood sugar high and ST depression
+68,0,2,111,274,1,0,82,1,2.8,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+48,0,0,196,292,1,0,158,1,1.6,1,2,1,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+63,0,0,178,394,0,1,194,1,5.4,1,2,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+76,0,1,111,179,1,0,187,0,1.2,1,0,1,0,chest pain and fasting blood sugar high
+53,1,2,181,319,0,0,123,1,5.9,2,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+63,1,2,118,378,1,1,185,1,1.3,1,0,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain
+53,1,0,102,271,0,1,187,0,3.8,2,3,3,1,high cholesterol and ST depression and multiple blocked vessels
+57,1,2,171,274,1,1,73,0,1.4,2,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+46,0,3,91,186,0,1,144,0,3.4,2,2,1,1,chest pain and ST depression and multiple blocked vessels
+74,0,0,118,319,0,2,118,0,4.2,2,2,1,1,high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+46,0,1,174,273,0,2,76,1,1.2,1,0,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and irregular heart rate
+30,0,0,168,250,1,1,179,1,3.2,0,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+63,1,2,141,184,1,0,191,1,2.9,0,1,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+44,0,1,116,236,1,1,80,1,0.4,0,0,2,0,chest pain and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+69,0,0,139,283,0,1,161,0,5.1,1,2,1,1,high cholesterol and ST depression and multiple blocked vessels
+64,1,3,184,345,1,0,92,1,2.1,0,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+61,1,3,168,167,0,2,97,1,3.6,1,0,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and irregular heart rate
+32,1,0,112,350,1,1,180,1,3.2,1,1,1,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+61,1,3,177,262,0,1,126,1,3.2,1,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+42,0,3,133,178,0,2,95,0,0.7,0,3,2,1,chest pain and multiple blocked vessels and irregular heart rate
+49,0,3,166,226,0,2,123,1,2.6,0,3,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+76,1,1,111,208,1,0,98,1,2.8,0,0,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+48,0,3,132,324,1,2,166,1,4.5,2,0,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+36,0,3,126,275,1,2,83,0,5.2,1,1,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+35,0,3,150,393,0,2,147,0,3.4,2,3,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+31,1,1,186,294,0,0,104,1,0.5,1,0,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and irregular heart rate
+45,0,0,145,258,1,2,99,1,1.5,0,1,2,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+61,1,2,92,373,1,2,161,1,1.0,1,3,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+76,0,3,152,389,1,0,86,0,0.8,1,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+40,0,0,108,171,0,2,162,1,2.3,2,2,1,1,exercise induced chest pain and ST depression and multiple blocked vessels
+50,0,3,112,217,0,2,148,1,1.4,1,3,2,1,chest pain and exercise induced chest pain and multiple blocked vessels
+50,1,1,118,218,0,0,179,1,1.4,0,0,2,0,chest pain and exercise induced chest pain
+74,0,0,119,314,0,1,171,0,0.3,1,0,2,0,high cholesterol
+58,1,1,128,382,0,0,175,1,0.1,1,2,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+66,1,3,197,198,1,2,116,1,0.6,1,3,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+66,1,3,200,290,0,2,133,0,1.1,2,1,3,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+73,0,1,114,311,0,2,133,0,2.7,1,0,2,1,chest pain and high cholesterol and ST depression
+36,0,2,190,258,0,0,156,1,3.2,1,2,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+55,0,1,200,235,0,2,76,0,0.9,2,2,3,1,chest pain and high blood pressure and multiple blocked vessels and irregular heart rate
+55,0,3,97,202,0,2,91,1,2.6,2,3,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+62,1,1,195,272,1,0,150,0,2.1,2,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+49,1,2,147,236,0,1,143,0,1.1,2,0,1,0,chest pain and high blood pressure
+58,1,1,105,328,0,1,194,1,0.0,0,2,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+61,0,2,161,280,0,2,119,1,2.9,0,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+56,1,2,90,191,1,0,121,1,4.3,1,2,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+75,0,1,197,247,1,2,70,0,1.4,0,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+61,1,1,94,309,1,0,73,1,0.8,1,1,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+33,0,0,92,258,0,0,73,1,5.5,0,0,1,1,high cholesterol and exercise induced chest pain and ST depression and irregular heart rate
+76,0,3,154,200,1,1,70,1,1.7,2,2,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+47,1,2,93,399,0,1,140,1,1.4,2,1,2,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+32,1,0,193,390,0,0,104,1,5.3,0,3,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+63,1,1,188,234,1,2,77,0,5.1,0,1,3,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+45,1,3,185,323,0,1,105,1,2.8,1,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+72,0,0,153,276,0,2,192,1,3.0,1,3,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+56,1,2,195,385,0,1,112,0,1.4,1,2,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels and irregular heart rate
+58,1,0,187,170,1,1,96,1,0.5,2,3,2,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+57,1,2,196,193,0,2,101,1,3.6,2,1,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+74,0,1,178,288,0,1,147,1,0.6,2,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+34,0,3,99,252,1,1,190,1,2.8,2,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+63,1,3,110,217,0,2,85,1,5.8,1,0,2,1,chest pain and exercise induced chest pain and ST depression and irregular heart rate
+69,0,3,135,392,0,1,168,0,5.9,2,1,1,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+65,1,1,192,278,1,1,116,0,1.5,2,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+52,0,2,180,241,0,1,100,0,3.9,2,2,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+57,0,1,116,340,0,2,73,1,2.9,2,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+74,0,3,155,173,0,0,86,0,5.4,0,2,2,1,chest pain and high blood pressure and ST depression and multiple blocked vessels and irregular heart rate
+59,0,1,130,274,0,2,108,1,1.7,1,2,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+63,1,1,102,376,0,0,117,1,0.0,1,1,3,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+61,1,1,98,290,1,1,108,1,1.0,2,0,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+49,1,2,125,260,1,0,99,0,2.2,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+60,0,0,175,247,1,2,91,0,2.0,1,3,3,1,high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+51,1,0,195,288,1,2,135,0,4.9,1,0,2,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression
+61,1,1,179,377,0,1,177,1,4.2,2,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+31,1,0,147,328,0,0,81,0,1.9,2,0,3,1,high blood pressure and high cholesterol and irregular heart rate
+46,0,0,143,166,0,1,105,1,2.8,1,2,3,1,high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+53,0,1,101,248,0,1,87,0,0.6,1,1,2,1,chest pain and high cholesterol and multiple blocked vessels and irregular heart rate
+70,0,1,170,231,0,2,159,0,5.6,0,1,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+59,1,3,167,253,1,0,70,1,5.8,1,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+31,1,0,103,363,1,0,196,1,6.1,1,2,1,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+68,1,2,123,398,0,0,159,0,5.4,2,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+74,0,1,142,301,0,0,156,0,1.1,1,2,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+52,0,3,109,399,0,1,159,0,0.3,2,1,1,1,chest pain and high cholesterol and multiple blocked vessels
+60,1,2,164,168,1,1,139,1,3.6,1,0,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression
+75,0,0,105,314,0,2,113,1,5.7,1,3,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+50,0,3,184,380,0,1,155,0,1.1,1,3,1,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+51,0,1,159,234,0,1,88,0,0.0,0,2,3,1,chest pain and high blood pressure and multiple blocked vessels and irregular heart rate
+30,0,2,145,157,1,2,170,1,5.0,2,1,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+55,1,1,172,177,0,2,164,0,0.5,0,3,1,0,chest pain and high blood pressure and multiple blocked vessels
+70,0,0,190,154,1,2,170,1,2.6,1,0,3,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression
+30,0,2,147,294,1,1,99,1,4.2,0,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+54,0,0,93,250,1,1,102,1,1.5,2,0,3,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+45,0,0,200,313,1,2,81,1,0.5,1,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+68,1,3,93,267,1,2,187,1,4.8,0,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+61,1,1,109,296,1,2,163,1,3.9,0,1,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+37,0,2,99,213,0,1,145,0,6.1,2,0,1,0,chest pain and ST depression
+71,0,0,113,240,0,1,98,1,2.1,0,1,2,1,exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+76,0,0,188,266,0,0,186,1,0.4,2,1,3,1,high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+67,0,2,115,247,1,1,84,0,4.6,1,0,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+57,0,0,126,160,0,1,71,1,3.2,1,1,2,1,exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+70,0,3,191,203,1,1,186,0,1.3,0,3,2,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels
+54,1,3,174,322,1,2,87,1,4.8,1,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+63,0,3,143,196,1,1,72,0,1.3,1,1,3,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+53,1,3,193,289,0,2,177,0,1.6,0,0,2,1,chest pain and high blood pressure and high cholesterol
+52,1,0,192,395,1,0,164,1,0.6,1,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+41,0,2,110,298,1,0,191,1,2.5,0,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+35,1,2,163,395,0,2,80,1,2.6,2,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+64,1,2,127,288,0,2,137,1,3.2,2,3,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+73,1,2,135,380,1,2,192,0,4.4,2,1,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+48,1,1,93,369,1,1,182,0,5.6,0,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+29,1,2,149,154,0,0,167,0,0.9,0,2,3,1,chest pain and high blood pressure and multiple blocked vessels
+36,1,1,146,358,0,2,162,1,0.3,1,1,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+74,0,1,134,333,0,1,91,0,0.1,1,0,2,1,chest pain and high cholesterol and irregular heart rate
+44,1,3,109,169,1,0,196,1,0.9,1,1,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+42,1,1,106,318,0,1,94,1,4.1,1,3,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+40,1,0,160,195,0,0,154,0,4.5,1,3,3,1,high blood pressure and ST depression and multiple blocked vessels
+51,0,1,93,399,0,1,124,1,4.9,0,1,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+43,1,3,182,161,1,0,164,0,1.5,0,3,3,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels
+56,0,1,103,219,0,0,188,1,1.9,2,2,1,1,chest pain and exercise induced chest pain and multiple blocked vessels
+62,1,0,92,166,0,1,78,0,3.0,2,1,2,1,ST depression and multiple blocked vessels and irregular heart rate
+30,0,0,177,264,0,2,111,1,0.4,2,3,2,1,high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+60,0,0,190,296,0,0,122,0,3.8,2,1,1,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+51,1,3,169,303,0,2,143,0,6.1,0,1,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+50,1,3,147,197,1,1,108,1,2.2,0,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+53,0,2,144,257,1,2,191,1,4.7,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+50,1,3,93,385,1,2,84,0,3.1,1,0,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+50,0,0,113,201,0,2,192,1,0.8,1,3,3,0,exercise induced chest pain and multiple blocked vessels
+70,0,0,123,245,1,2,180,1,3.6,2,0,2,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+34,0,3,119,219,1,2,200,1,1.9,1,0,1,0,chest pain and fasting blood sugar high and exercise induced chest pain
+43,0,1,171,332,1,0,152,0,0.2,0,0,3,0,chest pain and high blood pressure and high cholesterol and fasting blood sugar high
+71,0,3,108,399,0,0,79,0,3.9,2,2,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+65,1,3,120,377,0,0,161,1,5.3,2,0,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression
+61,0,0,149,251,1,1,98,1,2.1,1,1,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+36,0,2,149,224,1,2,104,0,2.4,2,0,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and irregular heart rate
+72,1,0,108,310,0,0,75,1,5.5,1,1,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+72,0,2,138,339,0,1,180,0,5.0,1,0,2,1,chest pain and high cholesterol and ST depression
+33,1,0,152,365,1,0,107,1,4.4,2,2,2,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+67,1,3,199,300,0,0,146,1,1.5,1,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+32,1,0,172,292,1,2,162,1,5.6,1,0,1,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+34,0,0,111,304,0,1,136,0,1.0,1,0,1,0,high cholesterol
+73,0,0,113,352,1,2,77,0,3.9,1,2,2,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+60,0,3,198,341,1,2,191,0,0.2,2,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high
+58,1,3,165,398,0,0,153,0,4.0,0,1,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+75,0,3,119,392,1,2,154,1,1.7,0,0,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain
+63,1,3,147,391,1,1,114,1,2.8,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+68,0,2,191,358,1,2,156,0,2.1,1,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+44,1,2,120,328,0,2,85,1,1.1,1,3,3,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+41,0,1,189,330,0,2,146,1,3.9,0,0,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+70,0,3,153,355,0,0,78,0,5.5,1,2,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+58,0,2,108,368,1,1,129,1,5.9,2,3,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+47,1,0,137,231,0,0,147,1,1.2,2,0,3,0,exercise induced chest pain
+45,1,3,134,241,1,0,146,0,4.4,2,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+47,0,1,189,328,1,0,140,1,4.1,0,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+56,0,1,183,324,0,0,84,1,2.1,1,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+54,1,1,144,388,0,0,140,1,0.1,1,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+65,1,0,144,153,1,1,171,0,4.3,1,1,3,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+54,1,2,186,284,1,2,91,0,5.9,0,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+51,0,0,107,258,0,0,182,1,3.9,0,0,3,1,high cholesterol and exercise induced chest pain and ST depression
+37,1,3,152,312,0,0,70,1,2.7,0,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and irregular heart rate
+40,0,1,181,197,0,1,79,1,3.3,0,0,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and irregular heart rate
+29,1,0,136,222,1,1,179,0,1.2,2,3,1,0,fasting blood sugar high and multiple blocked vessels
+29,0,0,164,221,1,2,182,0,4.7,0,1,2,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+75,1,2,146,265,1,1,119,0,4.6,0,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+62,1,2,134,322,1,2,81,1,0.9,0,2,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+60,1,1,122,230,1,0,158,1,5.4,1,0,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression
+76,1,0,106,230,0,0,181,1,1.7,1,2,3,1,exercise induced chest pain and multiple blocked vessels
+53,1,0,159,262,0,2,147,1,6.1,1,3,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+68,0,2,93,374,1,1,190,1,2.4,2,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+73,1,0,109,245,1,2,92,0,1.1,2,0,2,1,high cholesterol and fasting blood sugar high and irregular heart rate
+29,1,0,136,221,0,1,94,1,2.2,0,1,3,1,exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+44,1,0,180,296,0,0,87,1,2.7,1,1,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+67,0,2,104,212,0,1,112,1,0.4,2,0,1,1,chest pain and exercise induced chest pain and irregular heart rate
+33,1,1,159,187,0,2,147,0,3.6,1,3,3,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+50,0,3,136,216,1,2,97,1,3.7,2,0,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+57,1,1,167,336,0,0,128,0,4.6,2,3,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+31,1,3,164,218,1,1,132,0,0.2,0,1,3,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels
+40,0,0,192,162,0,1,161,0,3.4,0,3,2,1,high blood pressure and ST depression and multiple blocked vessels
+54,1,1,98,324,0,1,125,0,0.3,2,0,1,0,chest pain and high cholesterol
+44,0,3,179,387,0,0,180,0,4.3,0,0,2,1,chest pain and high blood pressure and high cholesterol and ST depression
+65,0,2,105,338,1,1,137,1,0.3,2,0,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain
+50,1,2,158,180,1,2,115,1,5.7,2,3,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+57,0,1,150,396,0,1,136,0,4.4,1,3,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+42,1,1,99,357,1,0,75,0,3.1,0,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+56,1,0,139,263,1,1,93,0,2.7,0,1,2,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+33,0,1,92,373,0,1,163,1,0.8,0,2,3,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+75,0,0,166,171,0,2,82,1,1.8,1,2,2,1,high blood pressure and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+58,0,0,196,242,1,1,94,0,5.4,1,0,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+74,0,2,183,363,1,2,187,1,5.6,1,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+33,1,2,198,320,1,2,151,1,0.0,0,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+40,1,3,159,216,0,0,180,0,3.7,0,0,1,1,chest pain and high blood pressure and ST depression
+44,0,2,170,203,0,2,151,0,4.5,0,1,2,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+54,1,2,198,287,1,2,135,1,3.8,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+54,1,1,140,191,0,0,114,1,0.5,1,1,3,1,chest pain and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+76,1,2,108,213,0,2,183,1,1.3,2,1,3,1,chest pain and exercise induced chest pain and multiple blocked vessels
+49,1,3,131,275,1,0,132,0,1.6,1,2,2,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels
+67,0,1,124,170,1,1,145,0,5.2,2,0,3,0,chest pain and fasting blood sugar high and ST depression
+64,0,3,135,357,0,0,183,0,2.9,0,3,1,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+61,1,2,115,353,0,2,180,1,3.0,1,2,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+58,0,3,158,343,1,0,104,1,5.8,0,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,0,1,182,318,0,2,122,0,3.9,0,3,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+51,0,0,153,301,0,1,95,1,5.6,0,1,3,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+38,1,3,126,184,1,0,83,0,2.8,0,3,3,1,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+33,1,3,173,333,1,1,187,1,0.9,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+64,1,1,138,179,0,2,114,0,5.8,0,3,1,1,chest pain and ST depression and multiple blocked vessels and irregular heart rate
+62,0,1,110,206,0,2,120,1,2.8,2,1,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+59,1,3,163,371,0,1,188,1,1.1,1,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+38,1,2,153,196,1,0,88,0,1.9,0,1,3,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+47,0,3,94,312,0,0,151,0,0.3,1,1,1,1,chest pain and high cholesterol and multiple blocked vessels
+60,1,1,189,168,0,2,145,0,2.9,2,0,2,1,chest pain and high blood pressure and ST depression
+29,1,0,159,263,1,1,161,0,5.3,0,3,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+33,0,0,179,157,1,1,102,0,5.8,2,3,3,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+73,0,2,93,175,0,0,97,1,5.8,0,0,1,1,chest pain and exercise induced chest pain and ST depression and irregular heart rate
+32,0,3,192,262,1,0,192,0,0.8,2,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+44,1,0,128,381,1,0,195,0,2.4,0,3,2,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+52,1,3,124,220,0,1,106,0,0.2,1,0,1,0,chest pain and irregular heart rate
+44,1,1,90,179,1,0,168,0,5.3,0,1,3,0,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels
+30,0,0,113,284,1,0,167,0,2.2,1,0,3,0,high cholesterol and fasting blood sugar high and ST depression
+56,0,2,146,216,0,2,196,1,3.9,0,3,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+60,1,1,189,214,1,0,149,0,4.4,0,0,3,1,chest pain and high blood pressure and fasting blood sugar high and ST depression
+55,1,2,159,185,0,0,107,0,2.7,2,2,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels and irregular heart rate
+48,0,1,130,174,0,1,146,0,1.9,2,1,3,0,chest pain and multiple blocked vessels
+52,0,0,143,186,1,1,195,1,6.0,2,2,1,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+40,0,2,135,150,1,2,156,1,6.0,0,2,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+63,0,2,149,292,1,0,123,0,1.8,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+61,1,1,197,186,0,2,85,0,3.0,0,1,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels and irregular heart rate
+61,0,2,149,290,1,1,97,1,6.0,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+71,1,1,146,381,0,2,115,1,0.0,1,1,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+65,1,1,120,285,1,1,141,1,2.6,0,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+40,1,1,173,282,1,2,154,0,0.6,2,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+31,0,1,113,337,1,2,95,0,3.2,2,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+29,0,0,178,277,0,0,154,1,0.2,2,1,3,1,high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+61,0,1,125,350,1,2,134,0,2.5,0,2,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+68,0,3,174,276,1,0,184,1,1.4,2,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+38,1,2,119,150,0,0,133,1,3.3,0,3,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+71,0,3,113,313,0,0,156,1,6.2,1,0,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression
+72,0,0,197,184,1,0,176,0,5.0,2,2,1,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+57,1,3,195,343,1,2,165,1,5.2,1,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+41,0,2,119,340,1,1,146,1,3.9,2,2,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+40,1,3,175,253,0,1,156,0,0.3,0,0,1,1,chest pain and high blood pressure and high cholesterol
+59,1,0,181,172,0,1,126,1,1.3,0,0,2,1,high blood pressure and exercise induced chest pain
+74,1,1,96,158,0,2,172,0,5.7,0,1,3,1,chest pain and ST depression and multiple blocked vessels
+30,1,3,124,183,0,0,160,1,2.3,0,0,1,1,chest pain and exercise induced chest pain and ST depression
+63,1,0,144,323,1,1,114,0,0.6,2,1,3,1,high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+51,1,0,181,355,0,2,157,1,4.4,1,3,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+45,1,2,103,277,0,0,184,1,1.9,0,2,2,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+54,1,2,99,153,0,1,116,1,1.7,2,3,1,1,chest pain and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+36,0,3,169,307,1,0,119,1,6.2,1,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+57,0,1,105,372,1,1,153,1,5.3,0,3,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+54,0,0,143,251,0,1,160,0,2.5,1,2,2,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+38,0,3,184,224,0,1,160,0,6.1,0,0,3,1,chest pain and high blood pressure and ST depression
+54,1,0,195,248,1,0,178,1,4.0,1,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+62,0,0,178,221,1,2,126,1,4.6,1,2,1,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+69,1,1,166,152,1,0,100,1,0.2,0,3,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+35,0,1,159,291,1,1,90,0,0.8,2,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+32,0,3,133,337,1,0,159,0,3.9,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+73,0,1,162,354,1,2,109,1,5.6,0,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+39,1,1,134,322,1,0,181,0,3.9,1,1,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+57,0,3,189,373,1,2,114,1,0.8,1,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+64,1,1,145,183,0,2,146,1,0.7,2,2,1,1,chest pain and high blood pressure and exercise induced chest pain and multiple blocked vessels
+53,1,2,196,194,0,0,156,1,5.2,1,0,2,1,chest pain and high blood pressure and exercise induced chest pain and ST depression
+49,0,0,173,210,0,1,170,0,0.9,1,0,1,0,high blood pressure
+64,0,0,171,232,0,2,186,1,3.2,0,2,3,1,high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+38,0,0,196,272,0,0,161,1,0.2,0,1,1,1,high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+65,1,0,146,251,0,2,97,1,0.5,2,2,3,1,high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+37,0,3,110,165,1,1,94,0,4.2,1,0,2,1,chest pain and fasting blood sugar high and ST depression and irregular heart rate
+52,1,0,157,215,1,0,127,0,4.3,1,1,1,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+63,1,0,139,317,0,0,110,0,2.1,1,1,3,1,high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+63,0,0,122,294,0,0,144,1,1.3,2,0,3,1,high cholesterol and exercise induced chest pain
+76,0,0,180,268,1,1,107,0,5.0,1,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+64,1,2,96,311,1,2,144,1,1.3,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+46,1,0,159,383,1,0,135,0,3.4,2,2,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+67,1,2,104,273,0,2,72,1,6.0,0,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+60,0,3,171,293,1,2,186,0,0.9,0,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high
+52,1,1,121,251,0,1,168,1,5.8,2,1,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+51,0,0,164,337,0,0,88,0,1.1,0,0,3,1,high blood pressure and high cholesterol and irregular heart rate
+60,1,1,109,215,1,2,185,0,3.5,1,2,2,1,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels
+65,1,1,177,343,1,0,194,0,2.3,2,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+40,0,3,104,367,0,0,157,1,6.0,0,3,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+41,1,1,137,162,1,1,104,0,1.7,1,3,1,0,chest pain and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+51,0,2,160,333,1,0,70,0,2.5,1,0,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+53,0,1,110,260,0,0,195,0,6.1,0,1,1,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+63,1,1,131,308,1,2,158,0,3.3,1,0,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression
+69,0,1,115,183,0,1,94,1,3.1,2,3,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+58,0,0,197,188,0,0,85,0,1.6,0,2,2,1,high blood pressure and multiple blocked vessels and irregular heart rate
+45,1,0,103,344,1,2,142,1,4.3,1,1,2,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+48,0,2,146,285,0,1,198,1,0.1,1,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain
+76,0,2,126,364,0,1,111,1,0.3,0,0,3,1,chest pain and high cholesterol and exercise induced chest pain and irregular heart rate
+53,0,0,147,355,1,2,149,1,3.7,0,1,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+50,1,2,110,269,1,2,173,0,2.1,0,1,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+41,0,0,171,275,1,2,103,1,5.9,0,2,2,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+47,1,3,158,204,0,2,158,1,5.6,2,1,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+64,1,1,92,176,0,2,194,1,4.4,0,2,3,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+40,0,1,176,267,1,0,114,1,5.1,2,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+69,0,2,179,370,0,0,90,0,4.1,2,3,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+47,0,0,126,380,1,1,191,0,0.8,0,0,3,0,high cholesterol and fasting blood sugar high
+40,1,0,177,202,1,0,139,1,4.7,2,3,2,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+37,0,2,138,188,0,0,165,1,1.3,0,3,3,1,chest pain and exercise induced chest pain and multiple blocked vessels
+35,0,0,108,214,1,0,174,1,2.0,0,2,2,0,fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+56,0,3,178,294,0,2,117,0,5.1,1,0,3,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+42,0,1,174,382,0,1,108,0,3.3,0,1,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+59,0,2,101,307,1,1,100,0,5.3,1,0,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+47,1,2,150,330,0,1,79,0,1.3,2,3,3,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels and irregular heart rate
+75,1,0,130,162,1,1,99,0,3.8,1,1,2,1,fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+44,0,2,122,170,0,0,87,1,0.5,2,0,3,1,chest pain and exercise induced chest pain and irregular heart rate
+33,0,3,139,296,0,0,157,0,4.0,0,0,2,1,chest pain and high cholesterol and ST depression
+63,0,0,157,202,0,2,194,0,4.7,2,0,2,1,high blood pressure and ST depression
+40,0,0,195,168,1,1,142,1,3.6,2,0,3,1,high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression
+53,1,0,160,206,0,0,84,0,1.7,0,2,1,1,high blood pressure and multiple blocked vessels and irregular heart rate
+49,0,0,175,174,1,0,73,0,0.2,2,0,3,0,high blood pressure and fasting blood sugar high and irregular heart rate
+64,1,3,122,363,0,2,78,0,0.7,0,3,1,1,chest pain and high cholesterol and multiple blocked vessels and irregular heart rate
+51,1,0,170,180,0,2,178,1,3.9,1,3,1,1,high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+44,0,2,113,230,1,2,85,0,5.8,0,2,3,1,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+67,1,3,150,332,1,0,168,1,1.3,0,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+73,1,1,150,172,1,0,190,1,4.6,2,1,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+70,1,1,187,181,1,2,121,0,5.4,1,3,2,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+67,1,2,117,339,1,1,138,0,3.2,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+42,0,2,147,223,0,2,74,0,4.1,1,2,2,1,chest pain and high blood pressure and ST depression and multiple blocked vessels and irregular heart rate
+59,0,3,132,159,0,2,89,0,5.1,1,1,3,1,chest pain and ST depression and multiple blocked vessels and irregular heart rate
+33,1,1,130,377,1,2,148,1,1.6,2,1,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+63,0,1,128,349,0,2,180,0,1.8,0,0,1,0,chest pain and high cholesterol
+51,0,1,175,203,0,0,71,1,0.0,2,0,3,1,chest pain and high blood pressure and exercise induced chest pain and irregular heart rate
+57,0,1,138,201,0,1,162,1,6.0,0,0,2,1,chest pain and exercise induced chest pain and ST depression
+71,0,1,106,297,1,2,82,1,5.7,1,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+39,0,0,187,309,0,1,73,1,4.7,0,3,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+46,1,2,159,263,0,1,178,1,0.5,0,2,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+75,0,0,199,163,0,1,143,0,2.8,1,1,3,1,high blood pressure and ST depression and multiple blocked vessels
+40,0,1,159,327,1,2,164,1,0.6,1,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+37,0,3,187,305,0,0,174,1,0.1,0,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain
+38,0,3,154,259,0,2,77,0,3.8,2,2,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+72,1,1,163,393,1,1,136,0,6.0,0,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+45,1,1,174,202,1,1,179,1,5.6,1,0,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression
+66,1,3,94,301,0,0,78,1,4.3,2,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+35,1,0,91,228,0,2,186,0,0.6,1,0,1,0,normal
+74,0,0,111,171,1,1,80,1,1.7,1,1,1,1,fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+41,1,1,146,179,1,0,168,0,2.0,2,3,1,0,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels
+68,0,0,155,340,1,1,111,0,4.7,1,1,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+70,0,3,163,153,1,0,189,1,5.0,1,1,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+37,0,0,187,354,1,0,81,0,2.4,1,0,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+55,0,1,105,208,1,2,106,1,2.6,1,2,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+30,0,3,140,364,1,1,143,1,0.3,1,1,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+33,1,0,128,157,0,2,142,1,1.8,1,1,3,0,exercise induced chest pain and multiple blocked vessels
+57,1,2,175,359,1,1,121,0,2.8,1,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+65,1,3,165,161,1,2,199,1,0.7,1,2,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+66,1,3,177,268,0,1,125,0,2.8,1,2,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+47,0,2,200,308,1,2,129,1,5.3,0,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+36,1,2,129,355,1,0,92,1,3.6,0,1,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+76,0,3,127,183,0,1,172,0,0.5,1,3,2,1,chest pain and multiple blocked vessels
+73,1,2,149,231,1,1,109,1,1.2,0,2,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+29,0,1,148,397,0,0,133,1,2.9,2,0,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+50,0,1,99,247,0,2,154,0,2.2,0,1,1,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+45,1,1,188,276,0,1,158,0,2.2,1,3,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+35,0,3,153,224,0,1,100,0,3.3,1,2,1,1,chest pain and high blood pressure and ST depression and multiple blocked vessels and irregular heart rate
+53,0,2,152,254,1,2,89,1,3.6,0,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+73,1,2,138,353,0,0,199,0,4.9,1,2,1,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+32,0,0,153,198,0,2,82,0,2.1,2,0,3,1,high blood pressure and ST depression and irregular heart rate
+64,1,0,121,228,1,2,191,1,5.0,2,3,1,1,fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+34,1,2,96,334,0,2,172,0,2.1,1,1,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+59,1,2,110,372,0,1,175,1,0.3,2,1,2,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+47,0,2,109,390,0,0,188,1,3.4,2,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+72,0,3,115,399,0,0,139,0,3.6,0,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+67,0,2,157,242,1,2,168,1,5.8,2,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+55,1,0,199,303,0,1,151,0,4.5,0,0,2,1,high blood pressure and high cholesterol and ST depression
+38,0,3,175,167,1,2,144,0,5.7,1,2,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+54,1,2,104,245,1,1,187,0,5.6,0,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+47,1,0,193,363,0,1,153,0,3.7,1,2,2,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+67,0,3,174,187,0,1,138,1,3.3,1,0,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression
+31,1,2,168,358,0,1,128,1,3.5,1,2,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+73,0,2,175,236,0,0,195,0,6.1,1,1,3,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+41,0,2,181,237,1,1,180,0,4.8,1,1,1,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+56,0,3,103,199,1,1,131,1,0.7,0,2,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+48,0,0,116,157,1,2,197,0,4.8,1,0,1,0,fasting blood sugar high and ST depression
+56,0,0,194,318,0,2,174,1,1.1,2,0,2,1,high blood pressure and high cholesterol and exercise induced chest pain
+36,1,1,129,283,1,0,137,0,2.8,2,1,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+69,1,2,147,218,0,2,84,1,1.3,1,0,2,1,chest pain and high blood pressure and exercise induced chest pain and irregular heart rate
+67,1,1,117,321,0,1,104,1,4.3,2,2,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+29,0,1,115,270,0,2,83,1,5.4,0,3,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+31,0,0,152,213,0,0,171,0,1.8,0,2,1,0,high blood pressure and multiple blocked vessels
+41,0,3,155,306,0,2,169,0,0.5,1,1,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+56,1,3,114,305,1,2,76,0,1.9,1,1,1,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+53,0,0,92,288,1,0,99,0,4.2,1,1,3,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+61,1,3,161,270,0,0,118,0,2.0,2,0,1,1,chest pain and high blood pressure and high cholesterol and irregular heart rate
+66,1,1,133,214,1,1,180,1,1.7,2,2,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+34,0,2,186,256,0,2,141,1,1.1,0,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+72,0,0,131,296,0,1,149,1,3.1,2,2,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+73,1,2,188,286,0,2,152,1,1.7,0,3,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+60,0,3,95,304,1,2,111,1,4.5,2,2,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+73,1,2,128,311,0,1,86,1,0.5,0,1,2,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+75,0,3,141,321,0,2,76,1,4.1,1,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+49,0,3,112,345,1,2,79,0,1.5,2,2,1,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+44,1,1,178,249,1,2,103,1,3.0,0,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+49,0,3,139,231,1,0,105,0,1.8,2,0,2,0,chest pain and fasting blood sugar high and irregular heart rate
+39,1,1,132,292,0,1,75,1,4.5,1,2,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,0,1,108,200,0,0,98,1,5.9,0,1,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+64,1,1,158,290,1,1,195,0,5.7,2,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+63,1,0,140,232,0,1,150,1,3.6,2,2,3,1,exercise induced chest pain and ST depression and multiple blocked vessels
+47,0,0,100,326,1,2,144,0,2.9,1,0,2,0,high cholesterol and fasting blood sugar high and ST depression
+48,1,3,101,347,1,1,95,1,5.1,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+46,0,1,163,261,0,0,196,0,4.2,0,0,1,1,chest pain and high blood pressure and high cholesterol and ST depression
+75,0,0,97,205,0,0,184,1,1.1,2,0,2,0,exercise induced chest pain
+69,0,1,113,353,1,0,195,0,5.1,2,2,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+42,1,2,181,328,1,1,97,0,2.7,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+43,1,2,130,314,1,0,200,1,1.2,1,3,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+59,0,2,125,294,1,1,144,1,1.7,0,1,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+29,0,3,190,335,0,0,147,0,1.7,2,2,1,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+31,1,1,174,364,1,0,159,1,3.2,2,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+44,0,2,161,367,1,1,90,0,1.5,0,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+51,0,0,144,306,1,0,123,1,0.8,0,0,2,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+39,1,2,98,310,0,2,172,0,0.8,1,0,2,0,chest pain and high cholesterol
+40,0,2,136,209,0,1,128,1,3.6,1,3,1,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels
+38,1,2,104,368,1,1,141,0,4.6,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+60,0,3,137,366,0,1,89,1,2.0,0,1,1,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+44,1,0,199,269,0,2,181,0,0.2,2,3,3,1,high blood pressure and high cholesterol and multiple blocked vessels
+36,0,1,193,332,0,1,128,0,0.8,0,3,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+66,0,0,171,287,1,0,140,1,5.7,0,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+40,1,1,131,324,1,0,178,1,3.1,2,0,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+52,0,3,149,172,0,0,198,0,2.8,0,3,3,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+56,1,3,173,362,1,1,125,0,0.2,1,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+36,0,3,159,298,1,0,104,0,4.5,1,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+56,1,3,101,384,0,1,192,0,3.3,2,0,1,1,chest pain and high cholesterol and ST depression
+64,1,1,91,162,0,0,200,1,1.3,0,3,1,1,chest pain and exercise induced chest pain and multiple blocked vessels
+54,1,2,96,250,1,2,173,0,0.7,1,2,3,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels
+36,1,1,169,310,0,2,76,0,2.4,1,0,1,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+56,0,0,92,173,1,2,96,0,5.2,1,3,2,1,fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+56,0,3,198,257,1,2,70,1,5.4,1,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,1,3,92,160,0,1,156,0,3.7,0,0,2,1,chest pain and ST depression
+69,1,0,116,166,1,0,110,1,4.5,0,3,3,1,fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+64,1,1,196,345,1,2,192,1,0.7,0,2,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+55,0,2,129,324,0,1,144,1,3.6,0,1,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+45,0,2,191,174,0,2,111,1,4.1,1,2,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+37,0,0,122,243,0,2,186,1,1.2,2,1,3,1,high cholesterol and exercise induced chest pain and multiple blocked vessels
+61,0,2,181,350,1,1,132,1,5.5,2,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+48,1,1,90,170,0,1,196,1,1.2,1,2,1,0,chest pain and exercise induced chest pain and multiple blocked vessels
+41,1,1,97,233,0,0,117,0,1.9,1,1,2,0,chest pain and multiple blocked vessels and irregular heart rate
+56,1,0,190,360,0,0,72,0,3.8,2,0,2,1,high blood pressure and high cholesterol and ST depression and irregular heart rate
+76,0,1,121,360,0,2,185,1,4.0,2,2,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+57,0,3,137,289,1,2,168,0,4.3,1,3,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+41,0,0,196,186,1,0,185,0,0.7,1,0,3,0,high blood pressure and fasting blood sugar high
+74,1,1,190,191,0,0,83,1,5.3,0,1,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+63,1,0,93,294,1,1,181,0,3.3,0,2,2,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+34,0,2,183,250,0,0,130,1,2.9,2,2,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+46,1,1,159,395,0,0,164,0,6.1,1,3,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+33,0,3,199,197,1,2,86,1,4.6,2,0,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+75,0,1,108,252,1,0,193,1,0.7,0,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+53,1,0,121,177,0,2,93,0,4.7,0,2,1,1,ST depression and multiple blocked vessels and irregular heart rate
+30,0,0,98,190,0,0,185,0,0.6,2,0,3,0,normal
+38,1,1,101,248,1,1,151,1,0.2,0,2,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+58,0,3,100,196,0,0,119,1,2.5,1,0,1,1,chest pain and exercise induced chest pain and ST depression and irregular heart rate
+73,1,3,135,389,1,0,148,1,6.2,2,0,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+33,1,3,105,295,0,0,148,0,1.1,1,0,1,0,chest pain and high cholesterol
+61,1,0,90,355,0,2,139,0,4.2,1,3,1,1,high cholesterol and ST depression and multiple blocked vessels
+29,0,1,152,376,1,1,96,0,1.1,0,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and irregular heart rate
+46,0,2,198,385,1,0,84,0,4.5,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+60,1,0,110,254,1,2,119,1,3.1,2,1,1,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+75,1,3,119,273,1,1,105,1,4.2,1,1,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+39,0,1,102,348,1,2,77,1,1.3,1,3,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+49,0,3,123,382,1,2,148,1,4.6,1,0,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+54,0,2,93,162,1,1,200,0,6.2,1,1,1,1,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels
+53,1,3,117,359,0,0,116,1,4.1,1,1,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+50,0,3,191,378,0,2,174,1,3.1,0,2,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+55,0,2,184,290,0,2,167,0,5.7,2,0,3,1,chest pain and high blood pressure and high cholesterol and ST depression
+41,1,1,148,249,1,0,165,0,0.1,0,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+61,0,0,116,180,1,0,185,1,4.5,2,3,2,1,fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+62,0,1,158,279,1,1,82,0,5.5,2,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+69,0,2,114,165,0,1,70,1,0.4,2,2,3,1,chest pain and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+63,1,3,92,286,1,1,103,0,2.8,2,0,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+29,1,1,186,222,1,0,148,0,1.3,2,0,1,0,chest pain and high blood pressure and fasting blood sugar high
+49,1,0,157,315,0,2,147,1,3.5,1,2,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+76,1,2,114,352,1,2,190,0,4.0,0,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+34,1,1,109,203,0,1,162,1,1.9,0,0,3,0,chest pain and exercise induced chest pain
+56,1,0,123,333,0,0,167,0,2.9,1,0,3,1,high cholesterol and ST depression
+45,1,2,115,363,1,2,151,0,1.7,2,2,1,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels
+33,0,0,94,374,1,1,107,0,2.3,0,2,1,1,high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+59,0,2,188,249,1,2,83,0,1.0,1,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and irregular heart rate
+33,1,3,150,258,0,2,160,0,5.5,1,1,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+66,0,1,181,236,0,0,123,1,0.1,0,0,2,1,chest pain and high blood pressure and exercise induced chest pain
+31,0,0,182,322,0,0,199,0,5.5,0,1,3,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+51,1,2,98,386,1,2,170,1,3.5,2,2,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+65,0,0,191,311,1,1,158,0,2.1,2,1,1,1,high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+65,0,0,139,286,1,0,125,1,4.5,0,3,2,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+38,0,1,95,365,1,2,163,0,3.1,2,2,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+38,0,3,172,157,0,0,162,1,3.1,1,0,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression
+47,0,0,149,156,0,0,153,1,0.7,2,0,3,0,high blood pressure and exercise induced chest pain
+45,1,2,133,185,0,0,154,0,2.4,2,2,3,1,chest pain and ST depression and multiple blocked vessels
+49,1,2,100,167,0,2,91,0,1.5,1,2,1,1,chest pain and multiple blocked vessels and irregular heart rate
+42,1,3,155,152,1,1,104,0,0.1,2,3,2,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+37,0,2,136,177,1,1,85,1,2.2,1,2,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+74,1,3,197,219,1,1,119,1,0.6,2,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+29,0,2,197,385,0,0,191,0,1.6,0,3,3,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+73,0,1,162,321,0,2,197,0,0.6,2,0,2,1,chest pain and high blood pressure and high cholesterol
+41,0,0,174,298,1,0,182,1,0.6,0,1,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+32,0,1,177,177,1,1,86,1,1.2,0,2,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+29,1,0,187,381,0,1,149,0,6.2,0,1,1,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+68,1,0,175,203,1,2,199,1,0.0,0,0,1,1,high blood pressure and fasting blood sugar high and exercise induced chest pain
+60,0,0,92,331,0,0,154,0,4.0,0,1,3,1,high cholesterol and ST depression and multiple blocked vessels
+62,1,1,165,214,0,1,163,0,0.9,1,1,3,1,chest pain and high blood pressure and multiple blocked vessels
+56,0,0,181,249,0,2,150,0,5.7,1,0,1,1,high blood pressure and high cholesterol and ST depression
+59,1,1,119,170,1,0,138,1,0.6,1,0,1,1,chest pain and fasting blood sugar high and exercise induced chest pain
+36,1,3,179,384,1,0,138,1,5.9,0,2,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+67,0,2,110,376,0,1,85,1,3.8,2,1,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+54,1,2,117,162,1,1,120,1,0.0,1,3,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+62,0,0,179,206,0,0,174,0,5.5,2,3,1,1,high blood pressure and ST depression and multiple blocked vessels
+31,1,1,151,198,0,0,135,1,3.2,2,0,3,1,chest pain and high blood pressure and exercise induced chest pain and ST depression
+40,0,2,122,267,0,1,78,0,1.6,0,0,3,1,chest pain and high cholesterol and irregular heart rate
+29,0,1,174,203,0,0,176,0,4.8,0,1,2,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+72,1,1,124,287,1,1,169,0,5.7,0,0,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression
+33,1,0,141,202,0,0,155,1,3.0,1,3,2,1,high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+58,0,2,123,193,0,1,133,0,2.0,0,2,2,1,chest pain and multiple blocked vessels
+58,1,0,130,196,1,2,91,0,4.9,1,2,1,1,fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+45,1,0,140,202,0,1,179,1,4.2,1,1,2,1,exercise induced chest pain and ST depression and multiple blocked vessels
+76,0,2,136,223,0,1,166,0,5.5,1,2,1,1,chest pain and ST depression and multiple blocked vessels
+75,0,2,171,195,1,2,87,1,4.3,1,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+51,1,3,147,162,1,0,140,1,1.5,0,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain
+43,0,3,164,314,1,2,196,1,5.8,1,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+65,0,1,146,251,0,1,166,0,0.6,0,0,1,1,chest pain and high blood pressure and high cholesterol
+49,0,2,112,173,1,0,70,1,1.7,0,1,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+42,1,3,137,151,1,2,73,1,3.2,1,2,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+30,1,1,111,363,0,0,194,1,3.5,0,3,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+39,0,1,106,230,0,0,151,1,0.1,2,2,2,0,chest pain and exercise induced chest pain and multiple blocked vessels
+67,1,1,158,249,0,2,96,0,4.8,0,0,3,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+66,0,3,197,291,0,0,128,1,2.2,0,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+62,1,2,100,287,0,2,101,0,2.5,1,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+66,0,0,183,312,1,1,97,1,5.0,1,0,2,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+62,0,1,104,302,1,0,175,0,2.4,0,0,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression
+46,1,3,180,280,1,1,174,1,0.3,1,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+58,0,3,124,260,0,1,139,0,1.1,2,1,1,1,chest pain and high cholesterol and multiple blocked vessels
+43,1,0,122,251,0,0,131,1,5.9,2,3,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+55,1,0,173,166,0,2,103,0,0.4,1,1,3,1,high blood pressure and multiple blocked vessels and irregular heart rate
+62,0,3,105,161,1,0,156,0,2.2,0,0,2,1,chest pain and fasting blood sugar high and ST depression
+66,0,2,123,331,1,1,183,0,3.1,2,2,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+61,1,0,155,265,0,1,175,1,3.1,2,0,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+52,0,3,188,173,1,2,125,0,0.0,0,2,2,1,chest pain and high blood pressure and fasting blood sugar high and multiple blocked vessels
+43,0,0,129,178,0,0,182,0,3.1,1,2,2,0,ST depression and multiple blocked vessels
+58,0,2,117,320,1,1,82,0,2.4,2,1,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+70,0,1,136,302,1,1,87,0,6.0,0,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+45,0,0,128,377,1,1,182,1,1.0,0,1,2,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+33,1,2,159,271,0,2,108,0,2.2,2,0,2,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+57,1,3,162,337,1,1,148,0,2.6,1,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+32,0,0,109,239,1,1,99,0,2.4,2,2,2,1,fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+38,0,0,90,379,0,0,167,1,4.1,0,2,3,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+45,0,3,161,214,1,0,127,0,1.3,2,0,2,1,chest pain and high blood pressure and fasting blood sugar high
+38,1,1,176,233,0,1,136,0,1.4,1,3,1,1,chest pain and high blood pressure and multiple blocked vessels
+45,0,3,152,268,0,1,140,0,4.5,0,0,2,1,chest pain and high blood pressure and high cholesterol and ST depression
+48,1,0,156,305,0,0,175,0,3.1,1,0,2,1,high blood pressure and high cholesterol and ST depression
+52,1,3,93,165,0,2,76,1,2.6,2,1,3,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+33,1,2,147,324,0,2,109,0,1.0,2,0,2,1,chest pain and high blood pressure and high cholesterol and irregular heart rate
+62,0,3,114,358,1,2,139,0,1.2,1,3,3,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels
+34,1,0,136,253,0,2,137,1,0.1,2,0,1,1,high cholesterol and exercise induced chest pain
+30,0,3,127,241,0,2,118,1,0.6,1,3,3,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+41,1,1,104,335,0,2,121,1,3.5,2,2,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+71,0,3,152,353,0,2,183,0,5.5,1,0,1,1,chest pain and high blood pressure and high cholesterol and ST depression
+71,1,1,110,176,1,2,176,1,1.8,1,3,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+76,0,2,188,395,0,0,98,0,2.0,0,2,3,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels and irregular heart rate
+39,1,1,146,330,1,2,147,1,0.7,0,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+75,0,3,142,319,0,2,78,0,2.4,1,2,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+51,0,0,135,336,1,2,145,1,0.2,2,1,3,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+44,0,1,103,324,0,1,111,0,5.7,2,0,3,1,chest pain and high cholesterol and ST depression and irregular heart rate
+59,0,2,189,371,0,0,197,1,4.2,2,0,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+39,1,1,165,382,1,0,89,0,6.1,1,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+44,1,1,106,311,0,0,141,0,5.5,1,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+36,0,1,128,314,1,2,134,0,2.9,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+32,1,2,98,283,0,2,182,0,3.2,1,1,1,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+68,0,3,188,284,1,1,93,0,1.2,0,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels and irregular heart rate
+32,0,1,166,373,0,0,197,0,2.9,1,3,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+53,1,1,168,373,0,2,152,0,5.6,2,0,1,1,chest pain and high blood pressure and high cholesterol and ST depression
+31,0,0,171,394,1,0,132,0,0.3,0,2,1,1,high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+60,0,2,186,302,0,1,129,1,5.4,2,0,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+31,1,1,95,182,0,1,168,0,2.1,1,0,2,0,chest pain and ST depression
+55,0,2,180,204,0,1,131,0,5.6,0,0,1,1,chest pain and high blood pressure and ST depression
+57,0,1,112,335,0,0,99,1,5.8,1,3,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+60,0,3,148,156,0,2,91,0,4.2,0,0,2,1,chest pain and high blood pressure and ST depression and irregular heart rate
+47,0,3,180,393,0,2,195,1,4.1,2,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+49,1,1,187,206,1,1,111,0,2.8,1,2,2,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+33,1,3,135,275,1,2,167,1,5.2,1,3,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+46,1,1,127,161,1,1,100,1,6.0,0,3,2,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+56,0,3,103,165,0,0,181,0,4.8,0,1,1,1,chest pain and ST depression and multiple blocked vessels
+70,0,0,189,357,1,1,191,1,3.9,1,0,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+50,1,0,161,192,0,0,86,0,3.8,0,0,1,1,high blood pressure and ST depression and irregular heart rate
+49,0,0,151,266,0,1,107,0,5.3,1,0,1,1,high blood pressure and high cholesterol and ST depression and irregular heart rate
+34,0,2,124,377,0,2,179,0,3.4,0,0,1,1,chest pain and high cholesterol and ST depression
+29,0,2,108,354,0,2,91,0,5.0,2,1,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+33,0,0,119,284,1,1,125,1,3.2,0,1,3,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+69,1,2,167,377,0,2,188,0,0.4,2,1,2,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels
+40,1,3,173,260,1,2,126,1,2.4,0,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+54,1,1,114,200,0,2,104,1,2.8,0,0,1,1,chest pain and exercise induced chest pain and ST depression and irregular heart rate
+74,0,1,129,350,1,0,183,0,0.9,1,3,2,1,chest pain and high cholesterol and fasting blood sugar high and multiple blocked vessels
+62,1,1,177,309,1,2,194,0,0.6,0,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+42,1,0,103,224,1,0,198,0,3.3,0,1,3,0,fasting blood sugar high and ST depression and multiple blocked vessels
+54,0,2,115,157,1,1,121,0,0.5,2,3,2,1,chest pain and fasting blood sugar high and multiple blocked vessels
+73,0,3,191,374,1,2,154,1,1.9,0,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+55,1,3,176,364,1,2,134,0,4.6,1,0,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression
+37,1,0,111,366,0,2,198,1,6.0,2,0,1,1,high cholesterol and exercise induced chest pain and ST depression
+54,1,3,137,397,1,1,90,0,4.5,1,3,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+75,1,3,172,349,0,0,85,0,6.2,1,3,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+50,0,3,199,194,1,0,192,0,4.3,1,3,2,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels
+75,1,3,140,363,0,2,130,0,1.8,1,0,3,1,chest pain and high cholesterol
+58,1,2,92,208,1,1,123,1,4.2,2,0,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression
+71,0,3,131,281,1,1,95,1,4.4,0,2,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+76,1,1,108,253,0,1,149,0,2.3,1,3,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+45,0,0,162,344,1,1,134,1,0.1,2,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+54,0,2,117,306,1,1,169,1,4.4,1,1,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+64,0,3,173,382,1,0,143,0,0.1,0,2,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+29,1,2,134,306,0,0,86,0,3.9,2,1,3,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+36,1,3,160,247,1,0,190,1,1.0,2,1,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+63,0,1,167,375,0,2,92,1,3.5,0,2,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+43,1,0,152,305,1,1,140,1,3.1,2,3,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+75,1,3,162,354,1,2,177,1,0.1,0,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+50,0,3,108,228,0,1,148,0,2.2,2,3,3,1,chest pain and ST depression and multiple blocked vessels
+42,0,3,136,273,1,0,115,0,3.7,2,0,2,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and irregular heart rate
+54,1,3,103,364,1,2,147,1,5.3,0,1,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+56,0,0,127,321,0,0,85,0,5.5,0,0,2,1,high cholesterol and ST depression and irregular heart rate
+51,1,0,142,367,1,1,140,1,3.0,2,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+42,1,1,150,153,0,1,165,1,4.5,2,3,2,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+52,1,0,125,239,0,1,71,0,2.0,0,2,3,0,multiple blocked vessels and irregular heart rate
+30,1,3,129,253,0,0,79,1,2.1,0,1,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+73,0,1,170,286,1,1,194,1,1.2,2,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+54,0,1,119,268,0,0,150,0,3.5,2,1,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels
+42,0,1,98,282,0,2,139,0,2.0,2,2,1,1,chest pain and high cholesterol and multiple blocked vessels
+35,0,3,153,205,1,1,101,1,0.5,0,3,3,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+31,1,2,122,245,0,1,174,1,4.2,2,3,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+75,1,3,141,361,1,1,153,0,4.4,1,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+51,0,0,178,327,1,2,198,1,2.2,0,1,1,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+74,1,0,103,224,1,1,127,1,0.5,2,0,3,1,fasting blood sugar high and exercise induced chest pain
+71,1,3,164,292,1,0,114,0,2.6,0,2,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+75,1,3,142,181,0,0,166,0,2.7,1,1,3,1,chest pain and high blood pressure and ST depression and multiple blocked vessels
+73,0,1,188,177,0,1,92,0,4.1,0,0,2,1,chest pain and high blood pressure and ST depression and irregular heart rate
+46,0,3,194,171,0,1,92,0,2.0,2,1,3,1,chest pain and high blood pressure and multiple blocked vessels and irregular heart rate
+66,0,1,148,382,0,2,148,0,4.2,1,3,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+63,1,0,167,166,0,2,113,0,5.4,1,0,3,1,high blood pressure and ST depression and irregular heart rate
+43,0,1,183,208,1,2,96,1,1.5,2,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+53,0,3,130,239,0,1,95,1,6.1,2,1,3,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+65,0,0,157,385,0,2,166,0,2.4,2,2,1,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+56,0,2,157,348,0,2,105,0,1.7,0,3,3,1,chest pain and high blood pressure and high cholesterol and multiple blocked vessels and irregular heart rate
+38,0,1,181,255,1,0,178,1,2.6,0,2,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+67,0,0,97,334,1,2,124,1,0.6,0,0,2,1,high cholesterol and fasting blood sugar high and exercise induced chest pain
+45,1,1,91,175,0,0,138,1,0.8,2,2,2,1,chest pain and exercise induced chest pain and multiple blocked vessels
+67,1,0,194,174,1,0,130,0,2.6,2,0,3,1,high blood pressure and fasting blood sugar high and ST depression
+50,0,0,199,287,0,2,199,0,4.7,0,2,3,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+54,0,1,175,400,0,0,124,1,5.6,1,1,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+72,1,2,130,194,1,1,191,0,4.1,0,2,1,1,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels
+53,1,0,144,232,1,1,166,0,0.7,1,0,2,0,high blood pressure and fasting blood sugar high
+45,0,0,105,160,0,2,149,0,4.2,2,3,1,0,ST depression and multiple blocked vessels
+41,0,0,182,354,0,1,156,1,3.9,2,3,1,1,high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+48,0,2,151,330,1,0,107,1,5.0,0,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+53,0,2,137,349,0,1,188,0,5.1,0,0,3,1,chest pain and high cholesterol and ST depression
+32,1,3,119,253,1,2,147,0,5.4,2,2,1,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+38,0,1,101,217,0,2,104,0,2.6,0,3,1,1,chest pain and ST depression and multiple blocked vessels and irregular heart rate
+31,0,2,124,388,1,0,148,0,4.3,2,3,3,1,chest pain and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+69,0,1,100,244,0,2,136,0,1.7,2,3,3,1,chest pain and high cholesterol and multiple blocked vessels
+73,0,3,153,305,0,1,156,1,6.2,1,1,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+46,1,1,199,352,1,2,103,0,1.1,0,0,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and irregular heart rate
+75,1,2,139,384,0,0,166,0,0.1,2,0,3,1,chest pain and high cholesterol
+64,1,1,174,214,0,2,140,0,0.9,0,0,1,0,chest pain and high blood pressure
+75,0,2,110,198,1,1,72,1,4.8,1,0,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and irregular heart rate
+50,0,1,158,324,0,0,127,1,2.8,1,0,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression
+62,1,2,137,201,0,1,101,0,2.8,0,1,1,1,chest pain and ST depression and multiple blocked vessels and irregular heart rate
+75,0,2,109,251,0,0,100,1,5.9,0,2,3,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+36,0,1,190,365,1,2,151,1,5.7,2,1,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+68,1,3,156,331,1,0,112,1,1.9,1,3,1,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+72,1,0,133,337,1,0,174,1,1.3,1,1,1,1,high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+47,1,3,122,206,0,2,70,1,5.3,1,0,2,1,chest pain and exercise induced chest pain and ST depression and irregular heart rate
+70,1,1,162,196,0,1,130,1,5.6,0,1,2,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+69,0,3,150,308,0,2,83,0,3.4,2,0,3,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+65,0,2,98,382,0,0,75,1,3.9,0,1,2,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+34,1,0,157,323,1,2,172,1,1.6,0,0,1,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain
+54,0,1,124,391,0,0,79,0,5.0,0,3,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+62,1,1,170,175,0,2,140,0,3.9,2,0,1,1,chest pain and high blood pressure and ST depression
+73,1,1,187,390,0,2,159,0,3.1,0,1,2,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+34,0,0,177,263,1,1,195,0,0.4,1,3,2,1,high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+65,1,2,185,154,0,0,166,1,5.7,1,1,2,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+61,0,1,154,233,0,1,143,1,3.8,1,3,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression and multiple blocked vessels
+50,0,3,97,201,0,0,184,1,1.2,2,2,2,1,chest pain and exercise induced chest pain and multiple blocked vessels
+49,0,1,134,254,0,2,120,1,3.8,0,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+34,0,1,176,352,0,0,125,0,4.2,2,2,1,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+34,1,1,136,397,1,1,110,1,3.3,0,1,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+76,0,1,129,203,0,1,101,1,4.5,1,1,2,1,chest pain and exercise induced chest pain and ST depression and multiple blocked vessels and irregular heart rate
+32,1,2,165,310,0,1,84,0,3.6,0,3,3,1,chest pain and high blood pressure and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+58,1,3,143,327,0,0,131,1,5.9,0,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+39,1,2,165,315,0,1,97,1,0.3,0,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+58,1,3,135,304,0,1,133,1,0.7,2,3,2,1,chest pain and high cholesterol and exercise induced chest pain and multiple blocked vessels
+59,0,1,136,375,0,1,199,1,1.1,0,0,1,1,chest pain and high cholesterol and exercise induced chest pain
+52,0,0,104,164,0,2,196,0,4.3,0,2,1,0,ST depression and multiple blocked vessels
+37,1,2,194,373,0,2,105,0,4.0,0,0,2,1,chest pain and high blood pressure and high cholesterol and ST depression and irregular heart rate
+31,1,0,108,210,0,0,183,0,5.5,2,0,1,0,ST depression
+59,0,2,115,271,0,0,82,0,4.5,2,0,2,1,chest pain and high cholesterol and ST depression and irregular heart rate
+68,1,1,141,170,1,1,84,0,3.2,2,0,2,1,chest pain and high blood pressure and fasting blood sugar high and ST depression and irregular heart rate
+65,0,2,182,195,1,2,158,1,6.1,0,2,1,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+64,1,1,111,346,1,1,91,1,1.6,1,0,1,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and irregular heart rate
+52,0,2,193,283,1,1,143,0,5.2,1,3,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+59,1,1,110,187,0,2,94,0,2.6,1,1,1,1,chest pain and ST depression and multiple blocked vessels and irregular heart rate
+34,1,1,140,211,1,2,170,0,4.0,0,3,2,0,chest pain and fasting blood sugar high and ST depression and multiple blocked vessels
+30,0,3,127,235,1,2,186,1,4.5,1,1,3,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+48,1,1,109,339,0,0,110,0,3.9,1,3,2,1,chest pain and high cholesterol and ST depression and multiple blocked vessels and irregular heart rate
+56,1,3,118,359,1,0,157,1,0.9,1,3,3,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and multiple blocked vessels
+39,0,1,140,227,1,1,179,1,2.7,0,1,1,1,chest pain and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+32,1,0,93,351,0,0,189,1,3.5,1,2,1,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+43,0,1,144,195,0,2,166,1,5.3,1,0,1,1,chest pain and high blood pressure and exercise induced chest pain and ST depression
+34,0,0,160,290,0,2,126,0,2.8,0,3,2,1,high blood pressure and high cholesterol and ST depression and multiple blocked vessels
+58,1,0,181,372,1,0,199,1,5.7,2,2,3,1,high blood pressure and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression and multiple blocked vessels
+66,1,1,117,371,1,1,165,1,2.7,1,0,2,1,chest pain and high cholesterol and fasting blood sugar high and exercise induced chest pain and ST depression
+30,1,0,93,152,0,1,190,0,3.4,2,2,3,0,ST depression and multiple blocked vessels
+43,1,3,111,371,0,0,131,1,4.9,1,2,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+39,1,2,165,155,1,1,137,1,3.6,0,0,2,1,chest pain and high blood pressure and fasting blood sugar high and exercise induced chest pain and ST depression
+36,1,1,134,242,0,1,150,1,6.0,2,3,1,1,chest pain and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+54,1,0,156,157,1,1,86,0,4.1,2,2,2,1,high blood pressure and fasting blood sugar high and ST depression and multiple blocked vessels and irregular heart rate
+73,0,1,175,321,0,2,186,1,3.2,2,3,1,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+72,1,3,197,386,0,2,119,1,0.1,2,3,2,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels and irregular heart rate
+33,0,1,155,384,1,0,181,0,2.6,1,3,2,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and ST depression and multiple blocked vessels
+34,1,1,177,257,0,2,163,0,1.9,1,0,3,0,chest pain and high blood pressure and high cholesterol
+54,1,0,123,310,0,1,154,1,4.6,2,1,1,1,high cholesterol and exercise induced chest pain and ST depression and multiple blocked vessels
+32,0,3,180,358,0,2,143,1,1.3,1,3,3,1,chest pain and high blood pressure and high cholesterol and exercise induced chest pain and multiple blocked vessels
+47,1,2,144,389,1,0,178,0,1.3,2,1,3,1,chest pain and high blood pressure and high cholesterol and fasting blood sugar high and multiple blocked vessels
+48,1,2,194,224,0,2,87,1,1.2,2,1,1,1,chest pain and high blood pressure and exercise induced chest pain and multiple blocked vessels and irregular heart rate
