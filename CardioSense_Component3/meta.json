@@ -1,0 +1,42 @@
+{
+  "project": "CardioSense",
+  "component": 3,
+  "created_utc": "2025-12-13T02:08:10Z",
+  "dataset_handle": "sulianova/cardiovascular-disease-dataset",
+  "seed": 42,
+  "n_records": 68583,
+  "n_features": 13,
+  "features": [
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active",
+    "age_years",
+    "bmi",
+    "pulse_pressure"
+  ],
+  "recommendation_labels": [
+    "diet_low_sodium",
+    "bp_home_monitoring",
+    "diet_mediterranean",
+    "lipid_followup",
+    "diet_reduce_added_sugar",
+    "glucose_followup",
+    "activity_aerobic",
+    "activity_strength",
+    "weight_loss_plan",
+    "sleep_hygiene",
+    "stress_reduction",
+    "smoking_cessation",
+    "alcohol_reduction",
+    "clinician_followup_urgent",
+    "clinician_followup_routine"
+  ],
+  "n_bootstrap_models": 7
+}
