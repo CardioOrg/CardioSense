@@ -1,131 +1,118 @@
 # CardioSense
 
-CardioSense is a 4-part machine learning system for cardiovascular health support:
+**Cardiovascular Health Management System** — An AI-powered web application for managing cardiovascular patient data, running trained ML models for risk prediction, CXR analysis, and health recommendations, plus a supportive health chatbot.
 
-1. Symptom Analysis & CVD Risk Prediction  
-2. Cardiovascular Image Analysis (Chest X-ray)  
-3. Personalized Cardiovascular Health Recommendations  
-4. Mental Health Chatbot for CVD Patients  
+## Features
 
-This repo contains working training notebooks for each component, plus Streamlit apps for live demos.
+| Feature | Description |
+|---------|-------------|
+| **Risk Prediction** (C1) | Symptom-based cardiovascular risk assessment using clinical features + text |
+| **CXR Analysis** (C2) | Chest X-ray triage with DenseNet-121 (14 thoracic disease labels) |
+| **Recommendations** (C3) | Personalised lifestyle recommendations with counterfactual risk reduction |
+| **Health Chatbot** (C4) | Supportive companion with emergency/self-harm safety routing |
+| **Doctor Portal** | Patient listing, booking management, prescription creation |
+| **Patient Portal** | Profile, records, component results, PDF reports, doctor channeling |
 
----
+## Tech Stack
 
-## What is completed so far
+- **Backend:** Python Flask
+- **Database:** Firebase Firestore
+- **Auth:** Firebase Authentication (email/password) + Custom Claims
+- **Storage:** Firebase Cloud Storage
+- **Frontend:** Jinja2 templates + Bootstrap 5.3
+- **ML:** PyTorch (DenseNet-121), scikit-learn, XGBoost
+- **LLM:** Groq API (Llama 4 Scout)
+- **PDF:** fpdf2
 
-### Component 1: Symptom Analysis & CVD Risk Prediction
-**Notebook:** `CardioSense_Component1_Symptom_Risk_Prediction.ipynb`
+## Quick Start
 
-What it does:
-- Uses a mixed feature set:
-  - Structured numeric features (scaled)
-  - A text field `symptom_text` vectorized with TF-IDF
-- Trains a Logistic Regression classifier
-- Saves a single packaged model file: scaler + TF-IDF + classifier
+```bash
+# 1. Clone and enter
+cd CardioSenseApp
 
-Implementation notes:
-- The notebook reads `structured_dataset.csv`, splits train/test, scales numeric features, TF-IDF vectorizes text, then stacks both feature types into one sparse matrix before training. 
-- The notebook saves the trained package as `cardiosense_component1_model.pkl`. 
+# 2. Create virtual environment
+python -m venv venv
+venv\Scripts\activate   # Windows
+# source venv/bin/activate  # Linux/Mac
 
-Dataset URL (base source you used elsewhere in the project):
-- Kaggle Cardiovascular Disease dataset: :contentReference[oaicite:2]{index=2}  
-  (You can build `structured_dataset.csv` by enriching this dataset with generated symptom text.)
+# 3. Install dependencies
+pip install -r requirements.txt
 
----
+# 4. Configure environment
+copy .env.example .env
+# Edit .env with your Firebase and Groq credentials
 
-### Component 2: Cardiovascular Image Analysis (Chest X-ray)
-**Notebook:** `CardioSense_Component2_CXR_Full_Colab.ipynb`
+# 5. Run
+python app.py
+```
 
-What it does:
-- Downloads ChestX-ray14 through KaggleHub in Colab
-- Builds multi-label targets from the dataset metadata
-- Fine-tunes **DenseNet121** with a multi-label head
-- Handles class imbalance using `pos_weight` in `BCEWithLogitsLoss`
-- Tracks per-label AUC using `torchmetrics`
-- Saves the best model weights + label map
+Open http://localhost:5000
 
-Implementation notes:
-- Uses pretrained DenseNet121, replaces the classifier, applies `pos_weight`, trains with AdamW, and measures multi-label AUROC. 
-- Saves best checkpoint to `outputs/cardiosense_cxr_densenet121.pth` and `outputs/label_map.json`. 
+## Environment Variables
 
-Dataset URL:
-- Kaggle NIH Chest X-rays (ChestX-ray14)
+| Variable | Description |
+|----------|-------------|
+| `FLASK_SECRET_KEY` | Flask session secret key |
+| `FIREBASE_PROJECT_ID` | Firebase project ID |
+| `FIREBASE_SERVICE_ACCOUNT_JSON_PATH` | Path to Firebase service account JSON |
+| `FIREBASE_STORAGE_BUCKET` | Firebase Cloud Storage bucket |
+| `FIREBASE_API_KEY` | Firebase Web API key (for client-side auth) |
+| `CARDIOSENSE_KEY` | Groq API key for chatbot and summaries |
 
----
+## Project Structure
 
-### Component 3: Personalized Cardiovascular Health Recommendations
-**Notebook:** `CardioSense_Component3.ipynb`  
-**Demo app:** `app.py` (recommendations + risk scoring)
+```
+CardioSenseApp/
+├── app.py                    # Flask app factory
+├── config.py                 # Configuration & env vars
+├── requirements.txt          # Python dependencies
+├── .env.example              # Environment template
+├── services/                 # Business logic layer
+│   ├── auth_service.py       # Firebase Auth + RBAC
+│   ├── firebase_service.py   # Firebase init
+│   ├── storage_service.py    # Cloud Storage helpers
+│   ├── patient_service.py    # Patient CRUD
+│   ├── doctor_service.py     # Doctor operations
+│   ├── component1_service.py # Risk prediction
+│   ├── component2_service.py # CXR analysis
+│   ├── component3_service.py # Recommendations
+│   ├── component4_chat_service.py  # Chatbot
+│   ├── slm_summary_service.py     # AI summaries
+│   └── pdf_service.py        # PDF report generation
+├── routes/                   # Flask blueprints
+│   ├── auth_routes.py        # Login/signup/logout
+│   ├── patient_routes.py     # Patient views
+│   ├── doctor_routes.py      # Doctor views
+│   └── component_routes.py   # ML component endpoints
+├── templates/                # Jinja2 HTML templates
+├── static/                   # CSS + JS
+│   ├── css/app.css
+│   └── js/firebase_auth.js
+├── firebase/                 # Firestore rules & indexes
+│   ├── firestore.rules
+│   └── firestore.indexes.json
+├── CardioSense_Component1/   # Pre-trained Component 1 model
+├── CardioSense_Component2/   # Pre-trained Component 2 model
+└── CardioSense_Component3/   # Pre-trained Component 3 models
+```
 
-What it does:
-- Trains a **CVD risk model** on structured patient data using XGBoost
-- Uses a clean split strategy:
-  - Train/test
-  - A calibration split
-  - An early-stopping validation split
-- Calibrates probabilities for more reliable risk scores
-- Builds **multi-label recommendation targets** from rule logic
-- Trains a **multi-label recommender** (One-vs-Rest)
-- Trains a bootstrap ensemble for confidence estimation
-- Exports models + cleaned datasets for real-world use
+## Model Files
 
-Implementation notes:
-- XGBoost training uses early stopping via constructor `early_stopping_rounds` (XGBoost 3.1.x change). 
-- Saves exported artifacts to `/content/cardiosense_component3/` and writes model files + `cardio_cleaned.csv` + `recommendation_labels.csv`. 
-- The demo app loads the calibrated risk model and bootstrap recommender models, then produces a risk band + prioritized recommendations.
+Models are referenced from their original component directories:
 
-Dataset :
-- Kaggle Cardiovascular Disease dataset (70,000 records)
----
+- **Component 1:** `CardioSense_Component1/cardiosense_component1_model.pkl`
+- **Component 2:** `CardioSense_Component2/cardiosense_cxr_densenet121.pth`
+- **Component 3:** `CardioSense_Component3/models/` (XGBoost models + meta.json)
 
-### Component 4: Mental Health Chatbot for CVD Patients
-**Notebook:** `CardioSense_Component4_LLM_Chatbot_QLoRA.ipynb`  
-**Demo app:** `streamlit_app.py`
+## Security
 
-What it does (notebook):
-- Fine-tunes a TinyLLAMA chat model using **QLoRA (4-bit)** + PEFT LoRA
-- Prepares training text from multiple lightweight conversation/QA datasets
-- Saves:
-  - LoRA adapter
-  - Optional merged model folder for local inference
+- Firebase Authentication with email/password
+- Role-based access via custom claims (`patient` / `doctor`)
+- Firestore security rules enforce data isolation
+- Server-side session management with Flask
+- CSRF protection via session-based tokens
+- File upload validation (type + size limits)
 
-Implementation notes:
-- Uses 4-bit quantization (NF4) and LoRA on attention/MLP projection modules. 
-- Trains with TRL `SFTTrainer` and saves adapter + merged model outputs. 
+## Disclaimer
 
-What it does (Streamlit app):
-- Uses a fixed system prompt for supportive tone and safety routing
-- Routes urgent content:
-  - self-harm
-  - emergency physical symptoms  
-  before calling the model
-
-Implementation notes:
-- It includes regex routing for self-harm and emergency symptoms.
-
-Dataset URLs used for training:
-- MentalChat16K (Hugging Face)
-- Empathetic Dialogues LLM format (Hugging Face)
-- MedQuAD (Hugging Face)
-- CounselChat (Kaggle)
-
----
-
-## Tech stack
-
-Training:
-- Python, NumPy, Pandas
-- scikit-learn (TF-IDF, Logistic Regression, calibration, multi-label)
-- XGBoost (risk prediction)
-- PyTorch + TorchVision (DenseNet121 fine-tuning)
-- torchmetrics (multi-label AUROC)
-- Hugging Face Transformers + Datasets + TRL + PEFT + bitsandbytes (QLoRA)
-
-Deployment:
-- Streamlit (apps)
-
-Data access:
-- KaggleHub / Kaggle API (Colab dataset pulls)
-- Hugging Face datasets (chat training sets)
-
----
+This is a research prototype. It does not provide medical diagnoses and should not replace professional medical advice.

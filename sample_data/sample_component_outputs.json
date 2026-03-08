@@ -1,0 +1,109 @@
+{
+    "component_1": {
+        "risk_probability": 0.72,
+        "risk_percent": 72,
+        "risk_band": "high",
+        "feature_importances": {
+            "age_years": 0.18,
+            "ap_hi": 0.22,
+            "cholesterol": 0.15,
+            "bmi": 0.12,
+            "symptom_text": 0.08
+        }
+    },
+    "component_2": {
+        "threshold": 0.5,
+        "positive_findings": 2,
+        "predicted_labels": [
+            "Cardiomegaly",
+            "Effusion"
+        ],
+        "top_finding": "Cardiomegaly",
+        "top_probability": 0.78,
+        "all_results": [
+            [
+                "Cardiomegaly",
+                0.78
+            ],
+            [
+                "Effusion",
+                0.62
+            ],
+            [
+                "Atelectasis",
+                0.35
+            ],
+            [
+                "Infiltration",
+                0.22
+            ],
+            [
+                "Mass",
+                0.15
+            ],
+            [
+                "Nodule",
+                0.12
+            ],
+            [
+                "Pneumonia",
+                0.10
+            ],
+            [
+                "Pneumothorax",
+                0.08
+            ],
+            [
+                "Consolidation",
+                0.06
+            ],
+            [
+                "Edema",
+                0.05
+            ],
+            [
+                "Emphysema",
+                0.04
+            ],
+            [
+                "Fibrosis",
+                0.03
+            ],
+            [
+                "Pleural_Thickening",
+                0.02
+            ],
+            [
+                "Hernia",
+                0.01
+            ]
+        ]
+    },
+    "component_3": {
+        "risk": 0.45,
+        "risk_percent": 45,
+        "recommendations": [
+            {
+                "label": "increase_physical_activity",
+                "title": "Increase Physical Activity",
+                "probability": 0.82,
+                "risk_reduction": 0.08,
+                "priority": "high"
+            },
+            {
+                "label": "reduce_sodium_intake",
+                "title": "Reduce Sodium Intake",
+                "probability": 0.75,
+                "risk_reduction": 0.06,
+                "priority": "high"
+            },
+            {
+                "label": "weight_management",
+                "title": "Weight Management Program",
+                "probability": 0.70,
+                "risk_reduction": 0.05,
+                "priority": "medium"
+            }
+        ]
+    }
+}

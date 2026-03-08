@@ -1,0 +1,34 @@
+# CardioSense — Python dependencies
+
+# Web framework
+Flask==3.1.0
+python-dotenv==1.1.0
+
+# Firebase
+firebase-admin==6.6.0
+
+# PDF generation
+fpdf2==2.8.3
+
+# ML / Data
+scikit-learn==1.6.1
+joblib==1.4.2
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.15.2
+xgboost==2.1.4
+
+# Deep learning (Component 2 — CXR)
+torch==2.6.0
+torchvision==0.21.0
+opencv-python-headless==4.11.0.86
+Pillow==11.1.0
+pytorch-grad-cam==1.5.4
+
+# Groq API ( SLM summaries)
+groq==0.25.0
+
+torch
+transformers
+scikit-learn
+accelerate
