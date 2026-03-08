@@ -1,0 +1,281 @@
+{% extends "base.html" %}
+{% block title %}Health Chat — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold mb-0"><i class="bi bi-chat-dots"></i> CardioSense Health Chat</h2>
+        <form method="POST" action="{{ url_for('component.chat_new_session') }}" class="no-print">
+            <button type="submit" class="btn btn-cs-outline btn-sm">
+                <i class="bi bi-plus-circle"></i> New Session
+            </button>
+        </form>
+    </div>
+    <p class="text-muted mb-3">A supportive companion for cardiovascular health questions.</p>
+
+    <div class="cs-card">
+        <div class="card-body">
+            <div class="chat-container" id="chatContainer">
+                {% if messages %}
+                {% for msg in messages %}
+                <div class="d-flex {% if msg.role == 'user' %}justify-content-end{% endif %}">
+                    <div class="chat-bubble chat-{{ msg.role }}">
+                        {{ msg.content }}
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+                <div class="text-center text-muted py-4">
+                    <p class="fs-4 mb-1">💬</p>
+                    <p>Start a conversation with CardioSense. Ask about managing cardiovascular health, lifestyle
+                        changes, or emotional well-being.</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="chat-input-row no-print">
+                <input type="text" id="chatInput" placeholder="Type your message..."
+                    onkeypress="if(event.key==='Enter')sendChat()">
+                <button id="micBtn" onclick="toggleVoice()" class="btn btn-outline-secondary" title="Voice message"
+                    style="border-radius:50%; width:42px; height:42px; padding:0; display:none;">
+                    <i class="bi bi-mic" id="micIcon"></i>
+                </button>
+                <button onclick="sendChat()" class="btn btn-cs" id="sendBtn">
+                    <i class="bi bi-send"></i>
+                </button>
+                <button id="ttsToggle" onclick="toggleTTS()" class="btn btn-outline-secondary"
+                    title="Toggle voice replies"
+                    style="border-radius:50%; width:42px; height:42px; padding:0; display:none;">
+                    <i class="bi bi-volume-up" id="ttsIcon"></i>
+                </button>
+            </div>
+            <!-- Voice recording indicator -->
+            <div id="voiceIndicator" style="display:none;" class="mt-2">
+                <div class="d-flex align-items-center gap-2 p-2 rounded"
+                    style="background:rgba(220,53,69,0.1); border:1px solid rgba(220,53,69,0.3);">
+                    <span class="recording-dot"></span>
+                    <span class="small text-danger fw-semibold" id="voiceStatus">Listening...</span>
+                    <span class="small text-muted ms-auto" id="voiceTranscript"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-warning small mt-3">
+        <strong>Disclaimer:</strong> CardioSense is an AI companion for support and general guidance.
+        It does not provide medical diagnoses. If you experience a medical emergency, call your local
+        emergency services immediately.
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<style>
+    .recording-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #dc3545;
+        display: inline-block;
+        animation: pulse-dot 1s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+
+        0%,
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.4;
+            transform: scale(1.3);
+        }
+    }
+
+    #micBtn.recording {
+        background: #dc3545 !important;
+        border-color: #dc3545 !important;
+        color: white !important;
+        animation: pulse-mic 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-mic {
+
+        0%,
+        100% {
+            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+        }
+
+        50% {
+            box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+        }
+    }
+</style>
+<script>
+    const sessionId = "{{ session.session_id if session else '' }}";
+    const container = document.getElementById('chatContainer');
+    container.scrollTop = container.scrollHeight;
+
+    // ── Voice recognition setup ──
+    let recognition = null;
+    let isListening = false;
+    let ttsEnabled = true;
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+        recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = true;
+        recognition.lang = 'en-US';
+
+        document.getElementById('micBtn').style.display = '';
+        document.getElementById('ttsToggle').style.display = '';
+
+        recognition.onstart = () => {
+            isListening = true;
+            document.getElementById('micBtn').classList.add('recording');
+            document.getElementById('micIcon').className = 'bi bi-mic-fill';
+            document.getElementById('voiceIndicator').style.display = '';
+            document.getElementById('voiceStatus').textContent = 'Listening...';
+            document.getElementById('voiceTranscript').textContent = '';
+        };
+
+        recognition.onresult = (event) => {
+            let interim = '', final_text = '';
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+                const transcript = event.results[i][0].transcript;
+                if (event.results[i].isFinal) {
+                    final_text += transcript;
+                } else {
+                    interim += transcript;
+                }
+            }
+            document.getElementById('voiceTranscript').textContent = interim || final_text;
+            if (final_text) {
+                document.getElementById('chatInput').value = final_text;
+                document.getElementById('voiceStatus').textContent = 'Sending...';
+                setTimeout(() => sendChat(), 300);
+            }
+        };
+
+        recognition.onerror = (event) => {
+            console.log('Speech error:', event.error);
+            stopListening();
+            if (event.error === 'no-speech') {
+                document.getElementById('voiceTranscript').textContent = 'No speech detected. Try again.';
+                setTimeout(() => { document.getElementById('voiceIndicator').style.display = 'none'; }, 2000);
+            }
+        };
+
+        recognition.onend = () => {
+            stopListening();
+        };
+    }
+
+    function toggleVoice() {
+        if (isListening) {
+            recognition.stop();
+            stopListening();
+        } else {
+            // Stop any TTS playing
+            window.speechSynthesis.cancel();
+            try {
+                recognition.start();
+            } catch (e) {
+                console.log('Recognition error:', e);
+            }
+        }
+    }
+
+    function stopListening() {
+        isListening = false;
+        document.getElementById('micBtn').classList.remove('recording');
+        document.getElementById('micIcon').className = 'bi bi-mic';
+        setTimeout(() => { document.getElementById('voiceIndicator').style.display = 'none'; }, 500);
+    }
+
+    function toggleTTS() {
+        ttsEnabled = !ttsEnabled;
+        const icon = document.getElementById('ttsIcon');
+        icon.className = ttsEnabled ? 'bi bi-volume-up' : 'bi bi-volume-mute';
+        document.getElementById('ttsToggle').title = ttsEnabled ? 'Voice replies on' : 'Voice replies off';
+        if (!ttsEnabled) window.speechSynthesis.cancel();
+    }
+
+    function speakText(text) {
+        if (!ttsEnabled || !window.speechSynthesis) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+        utterance.lang = 'en-US';
+        // Try to pick a nice voice
+        const voices = window.speechSynthesis.getVoices();
+        const preferred = voices.find(v => v.name.includes('Google') && v.lang.startsWith('en'))
+            || voices.find(v => v.lang.startsWith('en'));
+        if (preferred) utterance.voice = preferred;
+        window.speechSynthesis.speak(utterance);
+    }
+
+    // Preload voices
+    if (window.speechSynthesis) {
+        window.speechSynthesis.getVoices();
+        window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+
+    // ── Chat functions ──
+    async function sendChat() {
+        const input = document.getElementById('chatInput');
+        const btn = document.getElementById('sendBtn');
+        const msg = input.value.trim();
+        if (!msg) return;
+
+        addBubble(msg, 'user');
+        input.value = '';
+        btn.disabled = true;
+        btn.innerHTML = '<span class="cs-spinner"></span>';
+
+        const thinkId = 'think-' + Date.now();
+        addBubble('<span class="cs-spinner"></span> Thinking...', 'assistant', thinkId);
+
+        try {
+            const resp = await fetch("{{ url_for('component.chat_send') }}", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: msg, session_id: sessionId }),
+            });
+            const data = await resp.json();
+
+            const thinkEl = document.getElementById(thinkId);
+            if (thinkEl) thinkEl.remove();
+
+            const reply = data.reply || 'No response received.';
+            addBubble(reply, 'assistant');
+
+            // Read the reply aloud
+            speakText(reply);
+        } catch (e) {
+            const thinkEl = document.getElementById(thinkId);
+            if (thinkEl) thinkEl.remove();
+            addBubble('Sorry, something went wrong. Please try again.', 'assistant');
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="bi bi-send"></i>';
+        }
+    }
+
+    function addBubble(text, role, id) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'd-flex ' + (role === 'user' ? 'justify-content-end' : '');
+        const bubble = document.createElement('div');
+        bubble.className = 'chat-bubble chat-' + role;
+        bubble.innerHTML = text;
+        if (id) bubble.id = id;
+        wrapper.appendChild(bubble);
+        container.appendChild(wrapper);
+        container.scrollTop = container.scrollHeight;
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,430 @@
+{% extends "base.html" %}
+{% block title %}Patient Detail - CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex align-items-center justify-content-between mb-4 no-print">
+        <div class="d-flex align-items-center">
+            <a href="{{ url_for('doctor.patient_list') }}" class="btn btn-cs-outline btn-sm me-3">
+                <i class="bi bi-arrow-left"></i> Back
+            </a>
+            <h2 class="fw-bold mb-0">
+                <i class="bi bi-person"></i> {{ detail.profile.get('full_name', detail.user_info.get('full_name',
+                'Patient')) }}
+            </h2>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="{{ url_for('doctor.download_patient_combined_pdf', uid=patient_uid) }}"
+                class="btn btn-cs-outline btn-sm">
+                <i class="bi bi-file-earmark-pdf"></i> Download Combined Report
+            </a>
+            <button onclick="window.print()" class="btn btn-cs btn-sm">
+                <i class="bi bi-printer"></i> Print
+            </button>
+        </div>
+    </div>
+
+    <!-- Print-only header -->
+    <div class="d-none d-print-block mb-3">
+        <h2 class="fw-bold">
+            <i class="bi bi-person"></i> {{ detail.profile.get('full_name', detail.user_info.get('full_name',
+            'Patient')) }}
+        </h2>
+    </div>
+
+    <!-- Profile overview -->
+    <div class="cs-card mb-4">
+        <div class="card-header">Patient Profile</div>
+        <div class="card-body">
+            <div class="row g-3">
+                {% set p = detail.profile %}
+                <div class="col-md-3"><strong>Age:</strong> {{ p.get('age_years', 'N/A') }}</div>
+                <div class="col-md-3"><strong>Sex:</strong> {{ p.get('sex', 'N/A') }}</div>
+                <div class="col-md-3"><strong>BMI:</strong> {{ p.get('bmi', 'N/A') }}</div>
+                <div class="col-md-3"><strong>BP:</strong> {{ p.get('ap_hi', '-') }}/{{ p.get('ap_lo', '-') }}</div>
+                <div class="col-md-3"><strong>Height:</strong> {{ p.get('height', 'N/A') }} cm</div>
+                <div class="col-md-3"><strong>Weight:</strong> {{ p.get('weight', 'N/A') }} kg</div>
+                <div class="col-md-3"><strong>Cholesterol:</strong> {{ p.get('cholesterol', 'N/A') }}</div>
+                <div class="col-md-3"><strong>Glucose:</strong> {{ p.get('gluc', 'N/A') }}</div>
+                <div class="col-md-3"><strong>Smoker:</strong> {{ 'Yes' if p.get('smoke') == 1 else 'No' }}</div>
+                <div class="col-md-3"><strong>Alcohol:</strong> {{ 'Yes' if p.get('alco') == 1 else 'No' }}</div>
+                <div class="col-md-3"><strong>Active:</strong> {{ 'Yes' if p.get('active') == 1 else 'No' }}</div>
+                <div class="col-md-3"><strong>Phone:</strong> {{ p.get('phone', 'N/A') }}</div>
+                {% if p.get('medical_history_text') %}
+                <div class="col-12"><strong>Medical History:</strong> {{ p.medical_history_text }}</div>
+                {% endif %}
+                {% if p.get('medications_text') %}
+                <div class="col-12"><strong>Medications:</strong> {{ p.medications_text }}</div>
+                {% endif %}
+                {% if p.get('allergies_text') %}
+                <div class="col-12"><strong>Allergies:</strong> {{ p.allergies_text }}</div>
+                {% endif %}
+                {% if p.get('risk_factors_text') %}
+                <div class="col-12"><strong>Risk Factors:</strong> {{ p.risk_factors_text }}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== COMPONENT RESULTS ==================== -->
+
+    <!-- Component 1 Results -->
+    {% if comp1_runs %}
+    <div class="cs-card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>🔬 Component 1 - Risk Prediction Results</span>
+            <a href="{{ url_for('doctor.download_patient_component_pdf', uid=patient_uid, component_id=1) }}"
+                class="btn btn-sm btn-light no-print">
+                <i class="bi bi-download"></i> PDF
+            </a>
+        </div>
+        <div class="card-body">
+            {% set run = comp1_runs[0] %}
+            {% set out = run.get('output_json', {}) %}
+            {% if out is mapping %}
+            <div class="row align-items-center mb-3">
+                <div class="col-auto">
+                    <span class="risk-badge risk-{{ out.get('risk_band', 'low') }} fs-6">
+                        {{ out.get('risk_band', 'N/A')|upper }} RISK
+                    </span>
+                </div>
+                <div class="col-auto">
+                    <span class="fs-3 fw-bold">{{ out.get('risk_percent', 0) }}%</span>
+                </div>
+                <div class="col text-muted small">
+                    Run: {{ run.get('created_at', '')[:16] }}
+                </div>
+            </div>
+            {% endif %}
+            {% if run.get('summary_text') %}
+            <div class="alert alert-info small">
+                <strong>Summary:</strong><br>{{ run.summary_text }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Component 2 Results -->
+    {% if comp2_runs %}
+    <div class="cs-card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>🩻 Component 2 - CXR Analysis Results</span>
+            <a href="{{ url_for('doctor.download_patient_component_pdf', uid=patient_uid, component_id=2) }}"
+                class="btn btn-sm btn-light no-print">
+                <i class="bi bi-download"></i> PDF
+            </a>
+        </div>
+        <div class="card-body">
+            {% set run = comp2_runs[0] %}
+            {% set out = run.get('output_json', {}) %}
+            {% if out is mapping %}
+
+            <!-- Input CXR & Grad-CAM Images -->
+            {% set input_img = out.get('input_image_url') or out.get('input_image_b64') %}
+            {% set gradcam_img = out.get('gradcam_image_url') or out.get('gradcam_image_b64') %}
+            {% if input_img or gradcam_img %}
+            <div class="row g-3 mb-4">
+                {% if input_img %}
+                <div class="col-md-6 text-center">
+                    <h6 class="fw-bold mb-2"><i class="bi bi-image"></i> Input Chest X-Ray</h6>
+                    <img src="{{ input_img }}" alt="Input CXR" class="img-fluid rounded shadow-sm"
+                        style="max-height:350px; border:2px solid #dee2e6;">
+                </div>
+                {% endif %}
+                {% if gradcam_img %}
+                <div class="col-md-6 text-center">
+                    <h6 class="fw-bold mb-2"><i class="bi bi-fire"></i> Grad-CAM Heatmap ({{ out.get('top_finding', 'Top
+                        Finding') }})</h6>
+                    <img src="{{ gradcam_img }}" alt="Grad-CAM" class="img-fluid rounded shadow-sm"
+                        style="max-height:350px; border:2px solid #dc3545;">
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <p class="fw-bold mb-2">{{ out.get('positive_findings', 0) }} positive findings above {{
+                (out.get('threshold', 0.7) * 100)|round|int }}% threshold</p>
+            {% set results = out.get('all_results', []) %}
+            {% for label, prob in results %}
+            <div class="result-bar">
+                <span class="bar-label">{{ label }}</span>
+                <div class="bar-bg" style="position:relative;">
+                    <div class="bar-fill"
+                        style="width:{{ (prob * 100)|round(1) }}%;
+                        background:{% if prob >= 0.7 %}#dc3545{% elif prob >= 0.5 %}#ffc107{% else %}#6c757d{% endif %};">
+                    </div>
+                    <div
+                        style="position:absolute; left:70%; top:0; bottom:0; width:2px; background:#dc3545; opacity:0.5;">
+                    </div>
+                </div>
+                <span class="bar-pct"
+                    style="color:{% if prob >= 0.7 %}#dc3545{% elif prob >= 0.5 %}#ffc107{% else %}#6c757d{% endif %};">
+                    {{ (prob * 100)|round(1) }}%
+                </span>
+            </div>
+            {% endfor %}
+            <div class="small text-muted mt-1"><span style="color:#dc3545;">━━</span> 70% threshold line</div>
+            {% endif %}
+            {% if run.get('summary_text') %}
+            <div class="alert alert-info small mt-3">
+                <strong>Summary:</strong><br>{{ run.summary_text }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Component 3 Results -->
+    {% if comp3_runs %}
+    <div class="cs-card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>💡 Component 3 - Recommendations</span>
+            <a href="{{ url_for('doctor.download_patient_component_pdf', uid=patient_uid, component_id=3) }}"
+                class="btn btn-sm btn-light no-print">
+                <i class="bi bi-download"></i> PDF
+            </a>
+        </div>
+        <div class="card-body">
+            {% set run = comp3_runs[0] %}
+            {% set out = run.get('output_json', {}) %}
+            {% if out is mapping %}
+            <p class="fw-bold mb-3">Estimated Risk: {{ out.get('risk_percent', 0) }}%</p>
+            {% for rec in out.get('recommendations', []) %}
+            <div class="rec-card"
+                style="border-left-color:{% if rec.priority == 'high' %}#dc3545{% elif rec.priority == 'medium' %}#ffc107{% else %}#198754{% endif %};">
+                <div class="rec-title">{{ rec.get('title', rec.get('label', '')) }}</div>
+                <div class="rec-prob">
+                    Probability: {{ (rec.probability * 100)|round|int }}% |
+                    Risk reduction: {{ (rec.risk_reduction * 100)|round(1) }} pts |
+                    Priority: {{ rec.priority|title }}
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% if run.get('summary_text') %}
+            <div class="alert alert-info small mt-3">
+                <strong>Summary & Diet Plan:</strong><br>
+                <div style="white-space: pre-wrap;">{{ run.summary_text }}</div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Component 4 Results / Chat History -->
+    {% if detail.chat_sessions %}
+    <div class="cs-card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>💬 Component 4 - Chatbot Sessions</span>
+            <a href="{{ url_for('doctor.download_patient_component_pdf', uid=patient_uid, component_id=4) }}"
+                class="btn btn-sm btn-light no-print">
+                <i class="bi bi-download"></i> PDF
+            </a>
+        </div>
+        <div class="card-body">
+            {% if comp4_runs and comp4_runs[0].get('summary_text') %}
+            <div class="alert alert-info small mb-3">
+                <strong>Chat Summary:</strong><br>
+                <div style="white-space: pre-wrap;">{{ comp4_runs[0].summary_text }}</div>
+            </div>
+            {% endif %}
+
+            {% for chat_session in detail.chat_sessions %}
+            <div class="mb-4">
+                <h6 class="fw-bold text-muted mb-2">
+                    <i class="bi bi-chat-dots"></i> Session — {{ chat_session.get('created_at', '')[:16] }}
+                </h6>
+                <div
+                    style="max-height: 400px; overflow-y: auto; padding: 10px; background: #f8f9fa; border-radius: 8px; border: 1px solid #dee2e6;">
+                    {% for msg in chat_session.get('messages', []) %}
+                    <div
+                        class="d-flex mb-2 {% if msg.get('role') == 'user' %}justify-content-end{% else %}justify-content-start{% endif %}">
+                        <div style="max-width: 75%; padding: 8px 12px; border-radius: 12px;
+                            {% if msg.get('role') == 'user' %}
+                            background: #0d6efd; color: white;
+                            {% else %}
+                            background: #e9ecef; color: #212529;
+                            {% endif %}">
+                            <div class="small fw-bold mb-1">
+                                {% if msg.get('role') == 'user' %}
+                                <i class="bi bi-person"></i> Patient
+                                {% else %}
+                                <i class="bi bi-heart-pulse"></i> CardioSense
+                                {% endif %}
+                            </div>
+                            <div class="small">{{ msg.get('content', '') }}</div>
+                            <div class="text-end" style="font-size: 0.65rem; opacity: 0.7;">
+                                {{ msg.get('created_at', '')[:16] }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% if not chat_session.get('messages') %}
+                    <p class="text-muted small text-center mb-0">No messages in this session.</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% if not loop.last %}
+            <hr>{% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% elif comp4_runs %}
+    <div class="cs-card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>💬 Component 4 - Chatbot Sessions</span>
+            <a href="{{ url_for('doctor.download_patient_component_pdf', uid=patient_uid, component_id=4) }}"
+                class="btn btn-sm btn-light no-print">
+                <i class="bi bi-download"></i> PDF
+            </a>
+        </div>
+        <div class="card-body">
+            {% set run = comp4_runs[0] %}
+            {% if run.get('summary_text') %}
+            <div class="alert alert-info small">
+                <strong>Chat Summary:</strong><br>
+                <div style="white-space: pre-wrap;">{{ run.summary_text }}</div>
+            </div>
+            {% endif %}
+            <p class="small text-muted">Last session: {{ run.get('created_at', '')[:16] }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if not comp1_runs and not comp2_runs and not comp3_runs and not comp4_runs %}
+    <div class="cs-card mb-4">
+        <div class="card-body text-center py-4">
+            <p class="text-muted mb-0">No component analysis results found for this patient.</p>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- ==================== COMPONENT RUNS HISTORY ==================== -->
+    {% if detail.component_runs %}
+    <div class="cs-card mb-4">
+        <div class="card-header">
+            <i class="bi bi-clock-history"></i> Full Analysis History
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Component</th>
+                            <th>Date</th>
+                            <th>Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for run in detail.component_runs %}
+                        <tr>
+                            <td><span class="badge bg-primary">C{{ run.get('component_id', '?') }}</span></td>
+                            <td class="small">{{ run.get('created_at', '')[:16] }}</td>
+                            <td class="small">{{ run.get('summary_text', '')[:100] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- ==================== MEDICAL RECORDS ==================== -->
+    {% if detail.records %}
+    <div class="cs-card mb-4">
+        <div class="card-header"><i class="bi bi-journal-medical"></i> Medical Records</div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>BP</th>
+                            <th>BMI</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for r in detail.records %}
+                        <tr>
+                            <td class="small">{{ r.get('created_at', '')[:10] }}</td>
+                            <td><span class="badge bg-secondary">{{ r.get('record_type', 'vitals') }}</span></td>
+                            <td>{% if r.get('ap_hi') %}{{ r.ap_hi }}/{{ r.ap_lo }}{% else %}-{% endif %}</td>
+                            <td>{{ r.get('bmi', '-') }}</td>
+                            <td class="small text-muted">{{ r.get('notes', '')[:40] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- ==================== BOOKINGS ==================== -->
+    {% if detail.bookings %}
+    <div class="cs-card mb-4">
+        <div class="card-header"><i class="bi bi-calendar-check"></i> Bookings</div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for b in detail.bookings %}
+                        <tr>
+                            <td>{{ b.get('preferred_date', '') }}</td>
+                            <td>{{ b.get('preferred_time', '') }}</td>
+                            <td><span class="badge status-{{ b.get('status', 'requested') }}">{{ b.get('status',
+                                    'requested')|title }}</span></td>
+                            <td class="small">{{ b.get('reason', '') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- ==================== PRESCRIPTIONS ==================== -->
+    {% if detail.prescriptions %}
+    <div class="cs-card mb-4">
+        <div class="card-header"><i class="bi bi-prescription2"></i> Prescriptions</div>
+        <div class="card-body">
+            {% for rx in detail.prescriptions %}
+            <div class="rec-card">
+                <div class="d-flex justify-content-between">
+                    <div class="rec-title">{{ rx.get('created_at', '')[:10] }}</div>
+                    <a href="{{ url_for('doctor.download_prescription', prescription_id=rx.get('prescription_id', rx.get('id', ''))) }}"
+                        class="btn btn-sm btn-outline-primary no-print">
+                        <i class="bi bi-download"></i> PDF
+                    </a>
+                </div>
+                <p class="small text-muted mb-0">{{ rx.get('instructions_text', '') }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Action buttons -->
+    <div class="d-flex gap-2 no-print">
+        <a href="{{ url_for('doctor.prescription_create') }}?uid={{ patient_uid }}" class="btn btn-cs">
+            <i class="bi bi-file-earmark-medical"></i> Create Prescription
+        </a>
+        <a href="{{ url_for('doctor.download_patient_combined_pdf', uid=patient_uid) }}" class="btn btn-cs-outline">
+            <i class="bi bi-file-earmark-pdf"></i> Download Full Report
+        </a>
+    </div>
+</div>
+{% endblock %}

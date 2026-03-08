@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="fw-bold mb-1">
+        <i class="bi bi-speedometer2"></i> Patient Dashboard
+    </h2>
+    <p class="text-muted mb-4">Welcome back, {{ current_user.full_name or current_user.email }}</p>
+
+    <!-- Stat cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3">
+            <div class="stat-card">
+                <div class="stat-value">{{ profile.get('age_years', '—') }}</div>
+                <div class="stat-label">Age</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="stat-card" style="border-left-color:#0d6efd;">
+                <div class="stat-value">{{ profile.get('bmi', '—') }}</div>
+                <div class="stat-label">BMI</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="stat-card" style="border-left-color:#6f42c1;">
+                <div class="stat-value">
+                    {% if profile.get('ap_hi') %}{{ profile.ap_hi }}/{{ profile.ap_lo }}{% else %}—{% endif %}
+                </div>
+                <div class="stat-label">Blood Pressure</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="stat-card" style="border-left-color:#198754;">
+                <div class="stat-value">{{ bookings|length }}</div>
+                <div class="stat-label">Bookings</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest component results -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-4">
+            <div class="cs-card h-100">
+                <div class="card-header"><i class="bi bi-activity"></i> Component 1 — Risk</div>
+                <div class="card-body">
+                    {% if comp1 %}
+                    {% set out = comp1.get('output_json', {}) %}
+                    {% if out is mapping %}
+                    <div class="text-center mb-2">
+                        <span class="risk-badge risk-{{ out.get('risk_band', 'low') }}">
+                            {{ out.get('risk_band', 'N/A')|upper }}
+                        </span>
+                    </div>
+                    <p class="text-center mb-0 fs-4 fw-bold">{{ out.get('risk_percent', 0) }}%</p>
+                    {% endif %}
+                    <p class="text-muted small mt-2 mb-0">{{ comp1.get('created_at', '')[:16] }}</p>
+                    {% else %}
+                    <p class="text-muted mb-0">Not run yet</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="cs-card h-100">
+                <div class="card-header"><i class="bi bi-image"></i> Component 2 — CXR</div>
+                <div class="card-body">
+                    {% if comp2 %}
+                    {% set out = comp2.get('output_json', {}) %}
+                    {% if out is mapping %}
+                    <p class="fw-bold mb-1">{{ out.get('positive_findings', 0) }} positive findings</p>
+                    <p class="text-muted small mb-0">Top: {{ out.get('top_finding', 'N/A') }}</p>
+                    {% endif %}
+                    <p class="text-muted small mt-2 mb-0">{{ comp2.get('created_at', '')[:16] }}</p>
+                    {% else %}
+                    <p class="text-muted mb-0">Not run yet</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="cs-card h-100">
+                <div class="card-header"><i class="bi bi-lightbulb"></i> Component 3 — Recommendations</div>
+                <div class="card-body">
+                    {% if comp3 %}
+                    {% set out = comp3.get('output_json', {}) %}
+                    {% if out is mapping %}
+                    <p class="fw-bold mb-1">Risk: {{ out.get('risk_percent', 0) }}%</p>
+                    <p class="text-muted small mb-0">{{ out.get('recommendations', [])|length }} recommendations</p>
+                    {% endif %}
+                    <p class="text-muted small mt-2 mb-0">{{ comp3.get('created_at', '')[:16] }}</p>
+                    {% else %}
+                    <p class="text-muted mb-0">Not run yet</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick actions -->
+    <h5 class="fw-bold mb-3">Quick Actions</h5>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+            <a href="{{ url_for('patient.profile') }}" class="quick-action">
+                <div class="qa-icon"><i class="bi bi-person"></i></div>
+                <div><strong>Edit Profile</strong><br><small class="text-muted">Update your details</small></div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{ url_for('patient.records') }}" class="quick-action">
+                <div class="qa-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+                <div><strong>Add Records</strong><br><small class="text-muted">Vitals, labs, CXR</small></div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{ url_for('patient.component_results') }}" class="quick-action">
+                <div class="qa-icon"><i class="bi bi-bar-chart"></i></div>
+                <div><strong>Run Analysis</strong><br><small class="text-muted">Components 1–3</small></div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="{{ url_for('component.chat_page') }}" class="quick-action">
+                <div class="qa-icon"><i class="bi bi-chat-dots"></i></div>
+                <div><strong>Health Chat</strong><br><small class="text-muted">Talk to CardioSense</small></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Recent prescriptions -->
+    {% if prescriptions %}
+    <h5 class="fw-bold mt-4 mb-3">Recent Prescriptions</h5>
+    <div class="table-responsive cs-table">
+        <table class="table table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Doctor</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for rx in prescriptions[:5] %}
+                <tr>
+                    <td>{{ rx.get('created_at', '')[:10] }}</td>
+                    <td>{{ rx.get('doctor_uid', 'N/A')[:12] }}</td>
+                    <td>
+                        <a href="{{ url_for('patient.download_prescription_pdf', prescription_id=rx.get('prescription_id', rx.get('id', ''))) }}"
+                            class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-download"></i> PDF
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

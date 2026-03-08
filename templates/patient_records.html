@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% block title %}Medical Records — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="fw-bold mb-4"><i class="bi bi-clipboard2-pulse"></i> Medical Records</h2>
+
+    <div class="row g-4">
+        <!-- Add Record Form -->
+        <div class="col-lg-5">
+            <div class="cs-card">
+                <div class="card-header">Add New Record</div>
+                <div class="card-body">
+                    <form method="POST" action="{{ url_for('patient.records') }}" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Record Type</label>
+                            <select name="record_type" class="form-select" id="recordType" onchange="toggleFields()">
+                                <option value="vitals">Vitals & Labs</option>
+                                <option value="cxr">Chest X-Ray</option>
+                            </select>
+                        </div>
+
+                        <div id="vitalsFields">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Systolic BP</label>
+                                    <input type="number" name="ap_hi" class="form-control form-control-sm"
+                                        value="{{ profile.get('ap_hi', 120) }}">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Diastolic BP</label>
+                                    <input type="number" name="ap_lo" class="form-control form-control-sm"
+                                        value="{{ profile.get('ap_lo', 80) }}">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Height (cm)</label>
+                                    <input type="number" name="height" class="form-control form-control-sm"
+                                        value="{{ profile.get('height', '') }}" step="0.1">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Weight (kg)</label>
+                                    <input type="number" name="weight" class="form-control form-control-sm"
+                                        value="{{ profile.get('weight', '') }}" step="0.1">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Cholesterol</label>
+                                    <select name="cholesterol" class="form-select form-select-sm">
+                                        <option value="1">Normal</option>
+                                        <option value="2">Above Normal</option>
+                                        <option value="3">Well Above</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Glucose</label>
+                                    <select name="gluc" class="form-select form-select-sm">
+                                        <option value="1">Normal</option>
+                                        <option value="2">Above Normal</option>
+                                        <option value="3">Well Above</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label small fw-semibold">Age (years)</label>
+                                    <input type="number" name="age_years" class="form-control form-control-sm"
+                                        value="{{ profile.get('age_years', '') }}">
+                                </div>
+                            </div>
+                            <div class="row g-2 mt-2">
+                                <div class="col-4">
+                                    <label class="form-label x-small fw-semibold">CP Type</label>
+                                    <select name="cp" class="form-select form-select-sm">
+                                        <option value="1">Typical</option>
+                                        <option value="0">Asymptom</option>
+                                        <option value="2">Atypical</option>
+                                        <option value="3">Non-anginal</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label x-small fw-semibold">Thalach</label>
+                                    <input type="number" name="thalach" class="form-control form-control-sm"
+                                        value="150">
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label x-small fw-semibold">Oldpeak</label>
+                                    <input type="number" name="oldpeak" class="form-control form-control-sm" step="0.1"
+                                        value="1.0">
+                                </div>
+                                <div class="col-3">
+                                    <label class="form-label x-small fw-semibold">RestECG</label>
+                                    <input type="number" name="restecg" class="form-control form-control-sm" min="0"
+                                        max="2" value="0">
+                                </div>
+                                <div class="col-3">
+                                    <label class="form-label x-small fw-semibold">Slope</label>
+                                    <input type="number" name="slope" class="form-control form-control-sm" min="0"
+                                        max="2" value="1">
+                                </div>
+                                <div class="col-3">
+                                    <label class="form-label x-small fw-semibold">CA</label>
+                                    <input type="number" name="ca" class="form-control form-control-sm" min="0" max="3"
+                                        value="1">
+                                </div>
+                                <div class="col-3">
+                                    <label class="form-label x-small fw-semibold">Thal</label>
+                                    <input type="number" name="thal" class="form-control form-control-sm" min="1"
+                                        max="3" value="2">
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="fbs" value="1" id="rFbs">
+                                    <label class="form-check-label small" for="rFbs">FBS > 120</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="exang" value="1" id="rExang">
+                                    <label class="form-check-label small" for="rExang">Ex. Angina</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="smoke" value="1" id="rSmoke">
+                                    <label class="form-check-label small" for="rSmoke">Smoker</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="alco" value="1" id="rAlco">
+                                    <label class="form-check-label small" for="rAlco">Alcohol</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="active" value="1"
+                                        id="rActive">
+                                    <label class="form-check-label small" for="rActive">Active</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cxrFields" style="display:none;">
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Upload Chest X-Ray</label>
+                                <input type="file" name="cxr_file" class="form-control" accept="image/png,image/jpeg">
+                                <small class="text-muted">PNG or JPG, max 16 MB</small>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 mt-3">
+                            <label class="form-label small fw-semibold">Notes</label>
+                            <textarea name="notes" class="form-control form-control-sm" rows="2"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-cs w-100">
+                            <i class="bi bi-plus-circle"></i> Add Record
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Records List -->
+        <div class="col-lg-7">
+            <div class="cs-card">
+                <div class="card-header">Record History</div>
+                <div class="card-body">
+                    {% if records %}
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>BP</th>
+                                    <th>BMI</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for r in records %}
+                                <tr>
+                                    <td class="small">{{ r.get('created_at', '')[:10] }}</td>
+                                    <td><span class="badge bg-secondary">{{ r.get('record_type', 'vitals') }}</span>
+                                    </td>
+                                    <td>
+                                        {% if r.get('ap_hi') %}{{ r.ap_hi }}/{{ r.ap_lo }}{% else %}—{% endif %}
+                                    </td>
+                                    <td>{{ r.get('bmi', '—') }}</td>
+                                    <td class="small text-muted">{{ r.get('notes', '')[:40] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted mb-0">No records yet. Add your first record using the form.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function toggleFields() {
+        const rt = document.getElementById('recordType').value;
+        document.getElementById('vitalsFields').style.display = rt === 'cxr' ? 'none' : 'block';
+        document.getElementById('cxrFields').style.display = rt === 'cxr' ? 'block' : 'none';
+    }
+</script>
+{% endblock %}

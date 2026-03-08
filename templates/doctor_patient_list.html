@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Patients — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="fw-bold mb-4"><i class="bi bi-people"></i> All Patients</h2>
+
+    {% if patients %}
+    <div class="cs-card">
+        <div class="card-body">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="searchBox" placeholder="Search by name or email..."
+                    oninput="filterPatients()">
+            </div>
+            <div class="table-responsive cs-table">
+                <table class="table table-hover mb-0" id="patientTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in patients %}
+                        <tr class="patient-row">
+                            <td class="fw-semibold">{{ p.get('full_name', 'N/A') }}</td>
+                            <td class="text-muted">{{ p.get('email', '') }}</td>
+                            <td class="small">{{ p.get('created_at', '')[:10] }}</td>
+                            <td>
+                                <a href="{{ url_for('doctor.patient_detail', uid=p.uid) }}" class="btn btn-sm btn-cs">
+                                    <i class="bi bi-eye"></i> View Details
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="text-center py-5">
+        <p class="text-muted fs-5">No patients registered yet.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function filterPatients() {
+        const q = document.getElementById('searchBox').value.toLowerCase();
+        document.querySelectorAll('.patient-row').forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(q) ? '' : 'none';
+        });
+    }
+</script>
+{% endblock %}

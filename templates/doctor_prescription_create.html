@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}Create Prescription — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="fw-bold mb-4"><i class="bi bi-file-earmark-medical"></i> Create Prescription</h2>
+
+    <form method="POST" action="{{ url_for('doctor.prescription_create') }}">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="cs-card mb-4">
+                    <div class="card-header">Patient & Booking</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Patient</label>
+                                <select name="uid" class="form-select" id="patientSelect" required>
+                                    <option value="">Select patient...</option>
+                                    {% for p in patients %}
+                                    <option value="{{ p.uid }}" {% if request.args.get('uid')==p.uid %}selected{% endif
+                                        %}>
+                                        {{ p.get('full_name', 'N/A') }} ({{ p.get('email', '') }})
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Related Booking (optional)</label>
+                                <select name="booking_id" class="form-select">
+                                    <option value="">No booking</option>
+                                    {% for b in bookings %}
+                                    <option value="{{ b.get('booking_id', b.get('id', '')) }}">
+                                        {{ b.get('patient_name', b.get('uid', 'N/A')[:10]) }} — {{
+                                        b.get('preferred_date', '') }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cs-card mb-4">
+                    <div class="card-header">Medications</div>
+                    <div class="card-body" id="medContainer">
+                        <div class="med-row row g-2 mb-2">
+                            <div class="col-md-4">
+                                <input type="text" name="med_name" class="form-control form-control-sm"
+                                    placeholder="Medication name" required>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="med_dosage" class="form-control form-control-sm"
+                                    placeholder="Dosage (e.g., 10mg)">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="med_frequency" class="form-control form-control-sm"
+                                    placeholder="Frequency (e.g., 2x daily)">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-sm btn-outline-danger w-100"
+                                    onclick="this.closest('.med-row').remove()">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0">
+                        <button type="button" class="btn btn-sm btn-cs-outline" onclick="addMedRow()">
+                            <i class="bi bi-plus"></i> Add Medication
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cs-card mb-4">
+                    <div class="card-header">Instructions</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Instructions</label>
+                            <textarea name="instructions_text" class="form-control" rows="3" required
+                                placeholder="Instructions for the patient..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Follow-up Notes</label>
+                            <textarea name="followup_text" class="form-control" rows="2"
+                                placeholder="Follow-up recommendations..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-cs btn-lg">
+                    <i class="bi bi-check2-circle"></i> Create Prescription
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function addMedRow() {
+        const container = document.getElementById('medContainer');
+        const row = document.createElement('div');
+        row.className = 'med-row row g-2 mb-2';
+        row.innerHTML = `
+        <div class="col-md-4">
+            <input type="text" name="med_name" class="form-control form-control-sm" placeholder="Medication name" required>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="med_dosage" class="form-control form-control-sm" placeholder="Dosage">
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="med_frequency" class="form-control form-control-sm" placeholder="Frequency">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-sm btn-outline-danger w-100" onclick="this.closest('.med-row').remove()">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+    `;
+        container.appendChild(row);
+    }
+</script>
+{% endblock %}

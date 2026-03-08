@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}CardioSense — Cardiovascular Health Management{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<section class="hero-section">
+    <div class="container position-relative" style="z-index:1;">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h1 class="hero-title">CardioSense</h1>
+                <p class="hero-subtitle mb-4">
+                    An AI-powered cardiovascular health management system. Predict risks,
+                    analyse chest X-rays, receive personalised recommendations, and
+                    connect with your doctor — all in one platform.
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="{{ url_for('auth.signup_patient') }}" class="btn btn-light btn-lg fw-semibold px-4">
+                        <i class="bi bi-person-plus"></i> Get Started as Patient
+                    </a>
+                    <a href="{{ url_for('auth.signup_doctor') }}" class="btn btn-outline-light btn-lg fw-semibold px-4">
+                        <i class="bi bi-hospital"></i> Join as Doctor
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                <div style="font-size: 10rem; line-height: 1; opacity: 0.3;">🫀</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-2">Four Intelligent Components</h2>
+        <p class="text-center text-muted mb-5">Powered by trained ML models and AI-driven analysis</p>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">🔬</div>
+                    <h5 class="fw-bold">Risk Prediction</h5>
+                    <p class="text-muted small">
+                        Symptom-based cardiovascular risk assessment using
+                        clinical features and free-text symptom analysis.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">🩻</div>
+                    <h5 class="fw-bold">CXR Analysis</h5>
+                    <p class="text-muted small">
+                        Chest X-ray triage using DenseNet-121 trained on
+                        14 thoracic disease categories.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">💡</div>
+                    <h5 class="fw-bold">Recommendations</h5>
+                    <p class="text-muted small">
+                        Personalised lifestyle and clinical recommendations
+                        with counterfactual risk reduction estimates.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">💬</div>
+                    <h5 class="fw-bold">Health Chatbot</h5>
+                    <p class="text-muted small">
+                        Supportive mental health companion with safety
+                        routing for emergencies and crisis support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it works -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">How It Works</h2>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                    style="width:64px;height:64px;background:var(--cs-gradient);color:#fff;font-size:1.5rem;font-weight:800;">
+                    1</div>
+                <h5 class="fw-bold">Create Your Profile</h5>
+                <p class="text-muted">Sign up, enter your clinical details, and upload medical records.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                    style="width:64px;height:64px;background:var(--cs-gradient);color:#fff;font-size:1.5rem;font-weight:800;">
+                    2</div>
+                <h5 class="fw-bold">Run AI Analysis</h5>
+                <p class="text-muted">Use our four trained components to analyse your health data.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                    style="width:64px;height:64px;background:var(--cs-gradient);color:#fff;font-size:1.5rem;font-weight:800;">
+                    3</div>
+                <h5 class="fw-bold">Connect With Doctors</h5>
+                <p class="text-muted">Share results, book appointments, and receive prescriptions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-3">Ready to take control of your cardiovascular health?</h3>
+        <a href="{{ url_for('auth.login') }}" class="btn btn-cs btn-lg px-5">
+            <i class="bi bi-box-arrow-in-right"></i> Login to CardioSense
+        </a>
+    </div>
+</section>
+{% endblock %}

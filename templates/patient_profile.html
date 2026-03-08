@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+{% block title %}My Profile — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="fw-bold mb-4"><i class="bi bi-person"></i> Patient Profile</h2>
+
+    <form method="POST" action="{{ url_for('patient.profile') }}">
+        <div class="cs-card mb-4">
+            <div class="card-header">Personal Information</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Full Name</label>
+                        <input type="text" name="full_name" class="form-control"
+                            value="{{ profile.get('full_name', '') }}" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Date of Birth</label>
+                        <input type="date" name="dob" class="form-control" value="{{ profile.get('dob', '') }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Sex</label>
+                        <select name="sex" class="form-select">
+                            <option value="Male" {% if profile.get('sex')=='Male' %}selected{% endif %}>Male</option>
+                            <option value="Female" {% if profile.get('sex')=='Female' %}selected{% endif %}>Female
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Phone</label>
+                        <input type="tel" name="phone" class="form-control" value="{{ profile.get('phone', '') }}">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Address</label>
+                        <input type="text" name="address" class="form-control" value="{{ profile.get('address', '') }}">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Emergency Contact</label>
+                        <input type="text" name="emergency_contact" class="form-control"
+                            value="{{ profile.get('emergency_contact', '') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cs-card mb-4">
+            <div class="card-header">Clinical Data</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Age (years)</label>
+                        <input type="number" name="age_years" class="form-control"
+                            value="{{ profile.get('age_years', '') }}" min="1" max="120">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Height (cm)</label>
+                        <input type="number" name="height" class="form-control" id="height"
+                            value="{{ profile.get('height', '') }}" step="0.1" oninput="computeBMI()">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Weight (kg)</label>
+                        <input type="number" name="weight" class="form-control" id="weight"
+                            value="{{ profile.get('weight', '') }}" step="0.1" oninput="computeBMI()">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">BMI (auto)</label>
+                        <input type="number" name="bmi" class="form-control" id="bmi"
+                            value="{{ profile.get('bmi', '') }}" step="0.1" readonly>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Systolic BP (ap_hi)</label>
+                        <input type="number" name="ap_hi" class="form-control" value="{{ profile.get('ap_hi', 120) }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Diastolic BP (ap_lo)</label>
+                        <input type="number" name="ap_lo" class="form-control" value="{{ profile.get('ap_lo', 80) }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Cholesterol</label>
+                        <select name="cholesterol" class="form-select">
+                            <option value="1" {% if profile.get('cholesterol', 1)==1 %}selected{% endif %}>Normal
+                            </option>
+                            <option value="2" {% if profile.get('cholesterol')==2 %}selected{% endif %}>Above Normal
+                            </option>
+                            <option value="3" {% if profile.get('cholesterol')==3 %}selected{% endif %}>Well Above
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Glucose</label>
+                        <select name="gluc" class="form-select">
+                            <option value="1" {% if profile.get('gluc', 1)==1 %}selected{% endif %}>Normal</option>
+                            <option value="2" {% if profile.get('gluc')==2 %}selected{% endif %}>Above Normal</option>
+                            <option value="3" {% if profile.get('gluc')==3 %}selected{% endif %}>Well Above</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" name="smoke" value="1" id="smoke" {% if
+                                profile.get('smoke')==1 %}checked{% endif %}>
+                            <label class="form-check-label fw-semibold" for="smoke">Smoker</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" name="alco" value="1" id="alco" {% if
+                                profile.get('alco')==1 %}checked{% endif %}>
+                            <label class="form-check-label fw-semibold" for="alco">Alcohol Use</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" name="active" value="1" id="active" {% if
+                                profile.get('active')==1 %}checked{% endif %}>
+                            <label class="form-check-label fw-semibold" for="active">Physically Active</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cs-card mb-4">
+            <div class="card-header">Advanced Clinical Data (For Risk Prediction)</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Chest Pain Type (cp)</label>
+                        <select name="cp" class="form-select">
+                            <option value="0" {% if profile.get('cp')==0 %}selected{% endif %}>Asymptomatic</option>
+                            <option value="1" {% if profile.get('cp', 1)==1 %}selected{% endif %}>Typical Angina
+                            </option>
+                            <option value="2" {% if profile.get('cp')==2 %}selected{% endif %}>Atypical Angina</option>
+                            <option value="3" {% if profile.get('cp')==3 %}selected{% endif %}>Non-anginal Pain</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Fasting Blood Sugar > 120 (fbs)</label>
+                        <select name="fbs" class="form-select">
+                            <option value="0" {% if profile.get('fbs', 0)==0 %}selected{% endif %}>No (<= 120
+                                    mg/dl)</option>
+                            <option value="1" {% if profile.get('fbs')==1 %}selected{% endif %}>Yes (> 120 mg/dl)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Resting ECG (restecg)</label>
+                        <select name="restecg" class="form-select">
+                            <option value="0" {% if profile.get('restecg', 0)==0 %}selected{% endif %}>Normal</option>
+                            <option value="1" {% if profile.get('restecg')==1 %}selected{% endif %}>ST-T wave
+                                abnormality</option>
+                            <option value="2" {% if profile.get('restecg')==2 %}selected{% endif %}>LV Hypertrophy
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Max Heart Rate (thalach)</label>
+                        <input type="number" name="thalach" class="form-control"
+                            value="{{ profile.get('thalach', 150) }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">ST Depression (oldpeak)</label>
+                        <input type="number" name="oldpeak" class="form-control" step="0.1"
+                            value="{{ profile.get('oldpeak', 1.0) }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Exercise Angina (exang)</label>
+                        <select name="exang" class="form-select">
+                            <option value="0" {% if profile.get('exang', 0)==0 %}selected{% endif %}>No</option>
+                            <option value="1" {% if profile.get('exang')==1 %}selected{% endif %}>Yes</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-semibold">Slope (peak exercise)</label>
+                        <select name="slope" class="form-select">
+                            <option value="0" {% if profile.get('slope')==0 %}selected{% endif %}>Upsloping</option>
+                            <option value="1" {% if profile.get('slope', 1)==1 %}selected{% endif %}>Flat</option>
+                            <option value="2" {% if profile.get('slope')==2 %}selected{% endif %}>Downsloping</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Major Vessels Coloured (ca: 0-3)</label>
+                        <input type="number" name="ca" class="form-control" min="0" max="3"
+                            value="{{ profile.get('ca', 1) }}">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Thalassemia (thal)</label>
+                        <select name="thal" class="form-select">
+                            <option value="1" {% if profile.get('thal')==1 %}selected{% endif %}>Fixed defect</option>
+                            <option value="2" {% if profile.get('thal', 2)==2 %}selected{% endif %}>Normal</option>
+                            <option value="3" {% if profile.get('thal')==3 %}selected{% endif %}>Reversable defect
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cs-card mb-4">
+            <div class="card-header">Medical History</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Medical History</label>
+                        <textarea name="medical_history_text" class="form-control"
+                            rows="3">{{ profile.get('medical_history_text', '') }}</textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Current Medications</label>
+                        <textarea name="medications_text" class="form-control"
+                            rows="3">{{ profile.get('medications_text', '') }}</textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Allergies</label>
+                        <textarea name="allergies_text" class="form-control"
+                            rows="3">{{ profile.get('allergies_text', '') }}</textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Risk Factors</label>
+                        <textarea name="risk_factors_text" class="form-control"
+                            rows="3">{{ profile.get('risk_factors_text', '') }}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-cs btn-lg">
+            <i class="bi bi-check-lg"></i> Save Profile
+        </button>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function computeBMI() {
+        const h = parseFloat(document.getElementById('height').value);
+        const w = parseFloat(document.getElementById('weight').value);
+        if (h > 0 && w > 0) {
+            document.getElementById('bmi').value = (w / ((h / 100) ** 2)).toFixed(1);
+        }
+    }
+</script>
+{% endblock %}

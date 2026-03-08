@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Prescription — CardioSense{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0"><i class="bi bi-file-earmark-medical"></i> Prescription Details</h2>
+        <div class="no-print">
+            <a href="{{ url_for('doctor.download_prescription', prescription_id=prescription.get('prescription_id', prescription.get('id', ''))) }}"
+                class="btn btn-cs-outline btn-sm me-2">
+                <i class="bi bi-download"></i> Download PDF
+            </a>
+            <button onclick="window.print()" class="btn btn-cs btn-sm">
+                <i class="bi bi-printer"></i> Print
+            </button>
+        </div>
+    </div>
+
+    <div class="cs-card mb-4">
+        <div class="card-header">Patient Information</div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-4"><strong>Name:</strong> {{ patient.get('full_name', 'N/A') }}</div>
+                <div class="col-md-4"><strong>Age:</strong> {{ patient.get('age_years', 'N/A') }}</div>
+                <div class="col-md-4"><strong>Date:</strong> {{ prescription.get('created_at', '')[:10] }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cs-card mb-4">
+        <div class="card-header">Medications</div>
+        <div class="card-body">
+            {% set meds = prescription.get('medication_list_json', []) %}
+            {% if meds and meds is iterable and meds is not string %}
+            {% for med in meds %}
+            <div class="rec-card">
+                <div class="rec-title">
+                    {% if med is mapping %}
+                    {{ med.get('medication', med.get('name', '')) }}
+                    {% else %}
+                    {{ med }}
+                    {% endif %}
+                </div>
+                {% if med is mapping %}
+                <div class="rec-prob">
+                    Dosage: {{ med.get('dosage', 'N/A') }} | Frequency: {{ med.get('frequency', 'N/A') }}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            {% else %}
+            <p class="text-muted mb-0">No medications listed.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if prescription.get('instructions_text') %}
+    <div class="cs-card mb-4">
+        <div class="card-header">Instructions</div>
+        <div class="card-body">
+            <p>{{ prescription.instructions_text }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if prescription.get('followup_text') %}
+    <div class="cs-card mb-4">
+        <div class="card-header">Follow-up</div>
+        <div class="card-body">
+            <p>{{ prescription.followup_text }}</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
