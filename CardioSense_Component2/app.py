@@ -19,7 +19,9 @@ from torchvision.models import DenseNet121_Weights, densenet121
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "cardiosense_cxr_densenet121.pth"
 LABEL_MAP_PATH = BASE_DIR / "label_map.json"
-IMG_SIZE = 224
+IMG_SIZE = 224 
+
+
 
 
 
