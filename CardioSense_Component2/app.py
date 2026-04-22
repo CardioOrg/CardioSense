@@ -135,7 +135,7 @@ def main():
 
     with st.sidebar:
         st.header("Settings")
-        threshold = st.slider(
+        threshold = st.slider( 
             "Positive call threshold",
             min_value=0.05,
             max_value=0.95,
